@@ -12,8 +12,6 @@
     border-radius: var(--EdgesB);
     width: 100%;
 }
-
-
 /* --- edits page */
 .myedits-wrap {
     display: flex;
@@ -78,8 +76,10 @@ p.continue a:hover{
     background-color: var(--ColorAccent);
 }
 /* --- askpage */
-#contact-page{
-    margin-bottom:var(--ThemeGap);
+#contact-page {
+    margin: var(--ThemeGapM) var(--ThemeGapM) var(--ThemeGap);
+    padding: var(--ThemeGap);
+    border-bottom: 1px solid var(--ColorBorders);
 }
 .faq {
     display: flex;
