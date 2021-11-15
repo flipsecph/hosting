@@ -1,4 +1,3 @@
-//--------- acc
 $(function() {
     var Accordion = function(el, multiple) {
         this.el = el || {};
