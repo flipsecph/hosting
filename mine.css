@@ -129,3 +129,113 @@ p.continue a:hover{
     border: 1px solid var(--ColorBorders);
     background-color: var(--ColorBG);
 }
+/* ---- popup */
+#popup-container {
+    display: none;
+    position: fixed;
+    background-color: var(--ColorBGpost);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+#popup {
+    width: calc( var(--PostWidth) + var(--ThemeGap) + var(--ThemeGap) );
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#popup-inner {
+    width: 100%;
+    border: 1px solid var(--ColorBorders);
+    background-color: var(--ColorBGpost);
+    border-radius:var(--EdgesB);
+}
+#h1-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -19px;
+    line-height: 0;
+}
+#h1-wrap h1 {
+    text-align: center;
+    padding: var(--Space);
+    display: inline-block;
+    font-weight: 500;
+    font-size: calc(var(--FontSize) + 1px);
+    background-color: var(--ColorAccent);
+    color: var(--ColorBGpost);
+    border-radius: var(--EdgesB);
+    margin: 0;
+}
+.terms-no, .terms-yes {
+    padding: var(--ThemeGap);
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.terms-no {
+    padding-top: calc( var(--ThemeGap) - 18px);
+}
+.terms-yes {
+    border-top: 1px solid var(--ColorBorders);
+}
+#popup-inner h2 {
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+.terms-no svg, .terms-yes svg {
+    --Iconsax-Color: var(--ColorAccent);
+    width: calc( var(--FontSize) + 4px);
+    height: calc( var(--FontSize) + 4px);
+    margin: -7px 0 0 -33px;
+    position: absolute;
+}
+.terms-no span:hover svg,
+.terms-yes span:hover svg{
+    --Iconsax-Color: var(--ColorText);
+}
+.terms-no span, .terms-yes span {
+    display: block;
+    margin-left: 33px;
+    line-height: 1.5;
+}
+#decide {
+    border-top: 1px solid var(--ColorBorders);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+#decide a {
+    color: var(--ColorText);
+    padding: var(--ThemeGap);
+    width: 99%;
+    text-align: center;
+    font-weight:500;
+}
+#decide a:hover {
+    background-color: var(--ColorBorders);
+    color: var(--ColorText);
+}
+#open,#close{
+    cursor:pointer;
+}
+#close {
+    border-right: 1px solid var(--ColorBorders);
+}
+@media only screen and (max-width: calc({select:Post width} + 102px) ) {
+#popup {
+    width: 100%;
+}
+#popup-inner {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+}
