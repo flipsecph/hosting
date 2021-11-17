@@ -99,7 +99,7 @@
 #popup-container {
     display: none;
     position: fixed;
-    background-color: var(--ColorBGpost);
+    background-color: var(--ColorBG);
     width: 100%;
     height: 100%;
     top: 0;
