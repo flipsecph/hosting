@@ -41,40 +41,6 @@
 .myedits ul li::before {
     content:none;
 }
-/* --- terms*/
-ul.donot, ul.youmay {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 0;
-}
-ul.donot li, ul.youmay li {
-    padding-left: 30px;
-}
-ul.donot li::before, ul.youmay li::before {
-    content: '—';
-    left: 0;
-}
-p.continue {
-    text-align: center;
-    margin: 50px 0;
-}
-p.continue a {
-    border-bottom: 0;
-    display: inline-block;
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: var(--Edges);
-    font-weight: 500;
-    color: var(--ColorText);
-    border: 1px solid var(--ColorBorders);
-    background-color: var(--ColorBG);
-}
-p.continue a:hover{
-    color: var(--ColorBGpost);
-    border: 1px solid var(--ColorAccent);
-    background-color: var(--ColorAccent);
-}
 /* --- askpage */
 #contact-page {
     margin: var(--ThemeGapM) var(--ThemeGapM) var(--ThemeGap);
