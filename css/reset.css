@@ -1,4 +1,5 @@
-/* Custom CSS Reset https://www.joshwcomeau.com */
+/* Custom CSS Reset inspired by https://www.joshwcomeau.com */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -16,4 +17,14 @@ input, button, textarea, select {
 }
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+p, ul, ol, blockquote, h2, h1 {
+    margin: 1em 0;
+}
+p:first-child {
+	margin-top: 0;
+}
+p:last-child {
+	margin-bottom: 0;
 }
