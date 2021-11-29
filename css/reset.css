@@ -18,7 +18,11 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
-
+/* tumblr themes specific */
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
 p, ul, ol, blockquote, h2 {
     margin: 1em 0;
 }
