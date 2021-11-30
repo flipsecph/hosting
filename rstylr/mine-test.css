@@ -1,0 +1,280 @@
+
+/* --- profile page */
+#profile-wrap {
+    margin-top: -44px;
+    background-color: var(--ColorBG);
+    position: relative;
+}
+#profile-image {
+    padding-bottom: var(--ThemeGap);
+    border-bottom: 1px dashed var(--ColorBorders);
+}
+#profile-image img {
+    border-radius: var(--EdgesB);
+    width: 100%;
+}
+#profile-text {
+    padding: var(--ThemeGap) 0;
+    border-bottom: 1px dashed var(--ColorBorders);
+}
+#elsewhere{
+    padding: var(--ThemeGap) 0;
+}
+#elsewhere img {
+    width: 22px;
+    height: 22px;
+    image-rendering: -webkit-optimize-contrast;
+}
+#elsewhere ul {
+    display: flex;
+    gap: var(--Space);
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+}
+#elsewhere ul li {
+    padding: 0;
+    position: initial;
+}
+#elsewhere ul li::before{
+    display:none;
+}
+#elsewhere ul li a {
+    border: 1px dashed var(--ColorBorders);
+    padding: 12px;
+    font-weight: 500;
+    border-radius: var(--Edges);
+    display: flex;
+}
+#elsewhere ul li a:hover {
+    border: 1px dashed var(--ColorAccent);
+    color: var(--ColorLink);
+}
+/* --- edits page */
+.myedits-wrap {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    margin-top: -44px;
+    background-color: var(--ColorBG);
+    position: relative;
+}
+.myedits {
+    padding: var(--ThemeGap) 0;
+    border-bottom: 1px dashed var(--ColorBorders);
+}
+.myedits:first-child {
+    padding-top: 0;
+}
+.myedits:last-child {
+    border-bottom: 0;
+}
+.myedits h1 {
+    font-size: calc(var(--FontSize) + 2px);
+    color: var(--ColorLink);
+    font-weight: 600;
+    margin-bottom: var(--Space);
+    letter-spacing: 0.1px;
+}
+.myedits ul {
+    display: flex;
+    gap: var(--Space);
+    flex-wrap: wrap;
+    margin: 0;
+}
+.myedits ul li {
+    padding: 0;
+    position: initial;
+}
+.myedits ul li::before{
+    display:none;
+}
+.myedits ul li a {
+    border: 1px dashed var(--ColorBorders);
+    padding: 6px 8px;
+    font-weight: 500;
+    color: var(--ColorText);
+    border-radius: var(--Edges);
+}
+.myedits ul li a:hover {
+    border: 1px dashed var(--ColorAccent);
+    color: var(--ColorLink);
+}
+
+/* --- askpage */
+#contact-page {
+    margin-bottom: var(--ThemeGap);
+    padding-bottom: var(--ThemeGap);
+    border-bottom: 1px dashed var(--ColorBorders);
+}
+.faq {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin: 0;
+}
+.faq .question {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.faq .open .question {
+    font-weight: 600;
+    color: var(--ColorLink);
+}
+.faq .icon {
+    overflow: hidden;
+    display: flex;
+    min-width: 30px;
+    min-height: 30px;
+    border: 1px dashed var(--ColorBorders);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.faq svg {
+    --Iconsax-Color: var(--ColorText);
+    width: 16px;
+    height: 16px;
+    display: flex;
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+}
+.faq .open svg {
+    display: flex;
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+}
+.faq .answer {
+    display: none;
+    line-height: 1.8em;
+    background-color: var(--ColorBG);
+    border-bottom: 1px dashed var(--ColorBorders);
+    padding: var(--Space) 0 var(--ThemeGapHalf) 0;
+    margin-bottom: var(--Space);
+}
+/* ---- popup */
+#popup-container {
+    display: none;
+    position: fixed;
+    background-color: var(--PopBG);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+#popup {
+    width: calc( var(--PostWidth) + var(--ThemeGap) + var(--ThemeGap) );
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#popup-inner {
+    width: 100%;
+    border: 1px solid var(--ColorBorders);
+    background-color: var(--ColorBGpost);
+    border-radius: var(--EdgesB);
+    padding: 0 var(--ThemeGap);
+}
+#h1-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -19px;
+    line-height: 0;
+}
+#h1-wrap h1 {
+    text-align: center;
+    padding: var(--Space);
+    display: inline-block;
+    font-weight: 500;
+    font-size: calc(var(--FontSize) + 1px);
+    background-color: var(--ColorAccent);
+    color: var(--ColorBGpost);
+    border-radius: var(--EdgesB);
+    margin: 0;
+}
+.terms-no, .terms-yes {
+    padding: var(--ThemeGap) 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.terms-no a, .terms-yes a {
+    border-bottom: 1px solid var(--ColorBorders);
+    padding-bottom: 3px;
+    font-weight: 500;
+}
+.terms-yes {
+    border-top: 1px dashed var(--ColorBorders);
+}
+#popup-inner h2 {
+    font-weight: 700;
+    margin: 0 0 var(--Space) 0;
+    text-transform: uppercase;
+    color: var(--ColorLink);
+}
+.terms-no svg, .terms-yes svg {
+    --Iconsax-Color: var(--ColorAccent);
+    width: calc( var(--FontSize) + 4px);
+    height: calc( var(--FontSize) + 4px);
+    margin: -7px 0 0 -33px;
+    position: absolute;
+}
+.terms-no span:hover svg,
+.terms-yes span:hover svg{
+    --Iconsax-Color: var(--ColorText);
+}
+.terms-no span, .terms-yes span {
+    display: block;
+    margin-left: 32px;
+    line-height: var(--LineHeight);
+}
+#decide {
+    padding: var(--ThemeGap) 0;
+    border-top: 1px dashed var(--ColorBorders);
+    display: flex;
+    gap: var(--ThemeGap);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+#decide a {
+    color: var(--ColorBG);
+    background-color: var(--ColorLink);
+    padding: 10px var(--Space);
+    text-align: center;
+    font-weight: 400;
+    border-radius: var(--Edges);
+}
+#decide a:hover {
+    background-color: var(--ColorAccent);
+}
+#open,#close{
+    cursor:pointer;
+}
+
+@media only screen and (max-width: calc(450px + 102px) ) {
+#popup {
+    width: 100%;
+}
+#popup-inner {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+}
