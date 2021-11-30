@@ -265,12 +265,15 @@
     cursor:pointer;
 }
 @media only screen and (max-width: 420px ) {
+#popup-container {
+    position: fixed;
+    background-color: var(--ColorBGpost);
+}
 #popup {
     width: 100%;
 }
 #popup-inner {
     border-radius: 0;
-    border-left: 0;
-    border-right: 0;
+    border: 0;
 }
 }
