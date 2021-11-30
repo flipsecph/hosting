@@ -264,7 +264,7 @@
 #open,#close{
     cursor:pointer;
 }
-@media only screen and (max-width: calc(450px + 102px) ) {
+@media only screen and (max-width: 420px ) {
 #popup {
     width: 100%;
 }
