@@ -1,4 +1,6 @@
-
+:root {
+    --PopBG: rgba({RGBcolor:Background},.60);
+}
 /* --- profile page */
 #profile-wrap {
     margin-top: -44px;
@@ -100,7 +102,6 @@
     border: 1px dashed var(--ColorAccent);
     color: var(--ColorLink);
 }
-
 /* --- askpage */
 #contact-page {
     margin-bottom: var(--ThemeGap);
@@ -267,7 +268,6 @@
 #open,#close{
     cursor:pointer;
 }
-
 @media only screen and (max-width: calc(450px + 102px) ) {
 #popup {
     width: 100%;
