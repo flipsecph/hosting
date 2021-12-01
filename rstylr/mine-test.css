@@ -163,7 +163,7 @@
 }
 /* ---- terms */
 .terms-no, .terms-yes {
-    padding: var(--ThemeGapHalf) 0;
+    padding: 0 0 var(--ThemeGapHalf) 0;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -175,10 +175,11 @@
 }
 .terms-yes {
     border-top: 1px dashed var(--ColorBorders);
+    padding-top: var(--ThemeGapHalf);
 }
 .terms-no h2, .terms-yes h2 {
     font-weight: 700;
-    margin: 0 0 var(--Space) 0;
+    margin: 0;
     text-transform: uppercase;
     color: var(--ColorLink);
 }
@@ -187,9 +188,10 @@
     border-top: 1px dashed var(--ColorBorders);
     display: flex;
     gap: var(--ThemeGapHalf);
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
 }
 #decide a {
     color: var(--ColorBG);
