@@ -25,11 +25,3 @@ $(function() {
     }
     var accordion = new Accordion($('#faq'), false);
 });
-
-
-function openPopup(divPopup) {
-	$(divPopup).fadeIn(250);
-}
-function closePopup(divPopup) {
-	$(divPopup).fadeOut(250);
-}
