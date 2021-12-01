@@ -161,50 +161,7 @@
     padding: var(--Space) 0 var(--ThemeGapHalf) 0;
     margin-bottom: var(--Space);
 }
-/* ---- popup */
-#popup-container {
-    display: none;
-    position: fixed;
-    background-color: var(--PopBG);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99; 
-}
-#popup {
-    width: var(--PostWidth);
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#popup-inner {
-    width: 100%;
-    background-color: var(--ColorBGpost);
-    border-radius: var(--EdgesB);
-    padding: 0 var(--ThemeGapHalf);
-    box-shadow: var(--ImageShadow);
-}
-#h1-wrap {
-    display: flex;
-    justify-content: center;
-    margin-top: -19px;
-    line-height: 0;
-}
-#h1-wrap h1 {
-    text-align: center;
-    padding: var(--Space);
-    display: inline-block;
-    font-weight: 500;
-    font-size: calc(var(--FontSize) + 1px);
-    background-color: var(--ColorAccent);
-    color: var(--ColorBGpost);
-    border-radius: var(--EdgesB);
-    margin: 0;
-}
+/* ---- terms */
 .terms-no, .terms-yes {
     padding: var(--ThemeGapHalf) 0;
     display: flex;
@@ -219,27 +176,11 @@
 .terms-yes {
     border-top: 1px dashed var(--ColorBorders);
 }
-#popup-inner h2 {
+.terms-no h2, .terms-yes h2 {
     font-weight: 700;
     margin: 0 0 var(--Space) 0;
     text-transform: uppercase;
     color: var(--ColorLink);
-}
-.terms-no svg, .terms-yes svg {
-    --Iconsax-Color: var(--ColorAccent);
-    width: calc( var(--FontSize) + 4px);
-    height: calc( var(--FontSize) + 4px);
-    margin: -7px 0 0 -33px;
-    position: absolute;
-}
-.terms-no span:hover svg,
-.terms-yes span:hover svg{
-    --Iconsax-Color: var(--ColorText);
-}
-.terms-no span, .terms-yes span {
-    display: block;
-    margin-left: 32px;
-    line-height: var(--LineHeight);
 }
 #decide {
     padding: var(--ThemeGapHalf) 0;
@@ -260,20 +201,4 @@
 }
 #decide a:hover {
     background-color: var(--ColorAccent);
-}
-#open,#close{
-    cursor:pointer;
-}
-@media only screen and (max-width: 420px ) {
-#popup-container {
-    position: fixed;
-    background-color: var(--ColorBGpost);
-}
-#popup {
-    width: 100%;
-}
-#popup-inner {
-    border-radius: 0;
-    border: 0;
-}
 }
