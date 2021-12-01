@@ -183,10 +183,10 @@
 }
 #popup-inner {
     width: 100%;
-    border: 1px solid var(--ColorBorders);
     background-color: var(--ColorBGpost);
     border-radius: var(--EdgesB);
     padding: 0 var(--ThemeGapHalf);
+    box-shadow: var(--ImageShadow);
 }
 #h1-wrap {
     display: flex;
