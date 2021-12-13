@@ -159,7 +159,7 @@
 .faq-container .article-inner {
     line-height: var(--LineHeight);
     border-bottom: 1px dashed var(--ColorBorders);
-    padding: var(--Space) 0 var(--ThemeGapHalf) 0;
+    padding: 0 0 var(--ThemeGapHalf) 0;
     margin-bottom: var(--Space);
 }
 /* ---- terms */
