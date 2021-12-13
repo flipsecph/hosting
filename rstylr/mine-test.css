@@ -105,62 +105,7 @@
     padding-bottom: var(--ThemeGap);
     border-bottom: 1px dashed var(--ColorBorders);
 }
-.faq {
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
-    margin: 0;
-}
-.faq .question {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-}
-.faq .open .question {
-    font-weight: 600;
-    color: var(--ColorLink);
-}
-.faq .icon {
-    overflow: hidden;
-    display: flex;
-    min-width: 30px;
-    min-height: 30px;
-    border: 1px dashed var(--ColorBorders);
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-}
-.faq svg {
-    --Iconsax-Color: var(--ColorText);
-    width: 16px;
-    height: 16px;
-    display: flex;
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-}
-.faq .open svg {
-    display: flex;
-    -webkit-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-}
-.faq .answer {
-    display: none;
-    line-height: 1.8em;
-    background-color: var(--ColorBG);
-    border-bottom: 1px dashed var(--ColorBorders);
-    padding: var(--Space) 0 var(--ThemeGapHalf) 0;
-    margin-bottom: var(--Space);
-}
+
 /* ---- terms */
 .terms-no, .terms-yes {
     padding: 0 0 var(--ThemeGapHalf) 0;
