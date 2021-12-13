@@ -222,11 +222,6 @@
     text-transform: uppercase;
     color: var(--ColorLink);
 }
-```
-
-**Output:**
-<!-- prettier-ignore -->
-```css
 /* --- profile page */
 #profile-wrap {
      margin-top: -44px;
