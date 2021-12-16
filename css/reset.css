@@ -1,18 +1,32 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 * {
-  margin: 0;
+    margin: 0;
+}
+body,
+html {
+    height: 100%;
 }
 body {
-  height: 100%;
-  -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
-input, button, textarea, select {
-  font: inherit;
+input,
+button,
+textarea,
+select {
+    font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
 }
 /* tumblr themes specific */
 button {
@@ -21,16 +35,21 @@ button {
     background: transparent;
     padding: 0;
 }
-ul, ol {
+ul,
+ol {
     list-style: none;
     padding: 0;
 }
-p, ul, ol, blockquote, h2 {
+p,
+ul,
+ol,
+blockquote,
+h2 {
     margin: 1em 0;
 }
 p:first-child {
-	margin-top: 0;
+    margin-top: 0;
 }
 p:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
