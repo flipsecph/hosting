@@ -162,7 +162,33 @@
     padding: 0 0 var(--ThemeGapHalf) 0;
     margin-bottom: var(--Space);
 }
-/* ---- terms */
+/* ---- codes*/
+#codes-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: var(--Space);
+    background-color: var(--ColorBG);
+    margin-top: -44px;
+    position: relative;
+}
+.codesbox {
+    border: 1px dashed var(--ColorBorders);
+    border-radius: var(--Edges);
+    padding: var(--Space);
+}
+.codesbox h1 {
+    display: block;
+    margin: 0!important;
+    font-size: calc( var(--FontSize) + 2px);
+}
+.codesbox p {
+    margin: 0;
+}
+.codesbox h1 a {
+    display: block;
+}
+/* ---- codes: terms */
 .terms-no,
 .terms-yes {
      padding: 0 0 var(--ThemeGapHalf) 0;
@@ -188,27 +214,13 @@
      color: var(--ColorLink);
 }
 #decide {
-     padding: var(--ThemeGapHalf) 0;
-     border-top: 1px dashed var(--ColorBorders);
-     display: flex;
-     gap: var(--Space);
-     flex-direction: column;
-     flex-wrap: nowrap;
-     justify-content: center;
-     align-items: center;
+    padding: var(--ThemeGapHalf) 0;
+    border-top: 1px dashed var(--ColorBorders);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#decide a {
-     color: var(--ColorBG);
-     background-color: var(--ColorLink);
-     padding: 10px var(--Space);
-     text-align: center;
-     font-weight: 400;
-     border-radius: var(--Edges);
-}
-#decide a:hover {
-     background-color: var(--ColorAccent);
-}
-/* ---- credit */
+/* ---- codes: credit */
 .credits {
      padding: var(--ThemeGap) 0;
      border-top: 1px dashed var(--ColorBorders);
