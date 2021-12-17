@@ -1,27 +1,20 @@
-$(function() {
-    var Accordion = function(el, multiple) {
-        this.el = el || {};
-        this.multiple = multiple || false;
+//------ faq
+var headers = document.querySelectorAll(".faq-container header.question");
 
-        var links = this.el.find('.question');
+for (var i = 0; i < headers.length; i++) {
+    headers[i].addEventListener("click", openAccordion);
+}
+function openAccordion(e) {
+    for (var i = 0; i < headers.length; i++) {
+        var parent = headers[i].parentElement;
+        var article = headers[i].nextElementSibling;
 
-        links.on('click', {
-            el: this.el,
-            multiple: this.multiple
-        }, this.dropdown)
+        if (this === headers[i] && !parent.classList.contains("open")) {
+            parent.classList.add("open");
+            article.style.maxHeight = article.scrollHeight + "px";
+        } else {
+            parent.classList.remove("open");
+            article.style.maxHeight = "0px";
+        }
     }
-
-    Accordion.prototype.dropdown = function(e) {
-        var $el = e.data.el;
-        $this = $(this),
-            $next = $this.next();
-
-        $next.slideToggle();
-        $this.parent().toggleClass('open');
-
-        if (!e.data.multiple) {
-            $el.find('.answer').not($next).slideUp().parent().removeClass('open');
-        };
-    }
-    var accordion = new Accordion($('#faq'), false);
-});
+}

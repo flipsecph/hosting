@@ -1,224 +1,240 @@
 /* --- profile page */
 #profile-wrap {
-    margin-top: -44px;
-    background-color: var(--ColorBG);
-    position: relative;
+     margin-top: -44px;
+     background-color: var(--ColorBG);
+     position: relative;
 }
 #profile-image {
-    padding-bottom: var(--ThemeGap);
-    border-bottom: 1px dashed var(--ColorBorders);
+     padding-bottom: var(--ThemeGap);
+     border-bottom: 1px dashed var(--ColorBorders);
 }
 #profile-image img {
-    border-radius: var(--EdgesB);
-    width: 100%;
+     border-radius: var(--EdgesB);
+     width: 100%;
 }
 #profile-text {
-    padding: var(--ThemeGap) 0;
-    border-bottom: 1px dashed var(--ColorBorders);
+     padding: var(--ThemeGap) 0;
+     border-bottom: 1px dashed var(--ColorBorders);
 }
-#elsewhere{
-    padding: var(--ThemeGap) 0;
+#elsewhere {
+     padding: var(--ThemeGap) 0;
 }
 #elsewhere img {
-    width: 22px;
-    height: 22px;
-    image-rendering: -webkit-optimize-contrast;
+     width: 22px;
+     height: 22px;
+     image-rendering: -webkit-optimize-contrast;
 }
 #elsewhere ul {
-    display: flex;
-    gap: var(--Space);
-    flex-wrap: wrap;
-    margin: 0;
-    justify-content: center;
+     display: flex;
+     gap: var(--Space);
+     flex-wrap: wrap;
+     margin: 0;
+     justify-content: center;
 }
 #elsewhere ul li {
-    padding: 0;
-    position: initial;
+     padding: 0;
+     position: initial;
 }
-#elsewhere ul li::before{
-    display:none;
+#elsewhere ul li::before {
+     display: none;
 }
 #elsewhere ul li a {
-    border: 1px dashed var(--ColorBorders);
-    padding: 12px;
-    font-weight: 500;
-    border-radius: var(--Edges);
-    display: flex;
+     border: 1px dashed var(--ColorBorders);
+     padding: 12px;
+     font-weight: 500;
+     border-radius: var(--Edges);
+     display: flex;
 }
 #elsewhere ul li a:hover {
-    border: 1px dashed var(--ColorAccent);
-    color: var(--ColorLink);
+     border: 1px dashed var(--ColorAccent);
+     color: var(--ColorLink);
 }
 /* --- edits page */
 .myedits-wrap {
-    display: flex;
-    gap: 0;
-    flex-direction: column;
-    margin-top: -44px;
-    background-color: var(--ColorBG);
-    position: relative;
+     display: flex;
+     gap: 0;
+     flex-direction: column;
+     margin-top: -44px;
+     background-color: var(--ColorBG);
+     position: relative;
 }
 .myedits {
-    padding: var(--ThemeGap) 0;
-    border-bottom: 1px dashed var(--ColorBorders);
+     padding: var(--ThemeGap) 0;
+     border-bottom: 1px dashed var(--ColorBorders);
 }
 .myedits:first-child {
-    padding-top: 0;
+     padding-top: 0;
 }
 .myedits:last-child {
-    border-bottom: 0;
+     border-bottom: 0;
 }
 .myedits h1 {
-    font-size: calc(var(--FontSize) + 2px);
-    color: var(--ColorLink);
-    font-weight: 600;
-    margin-bottom: var(--Space);
-    letter-spacing: 0.1px;
+     font-size: calc(var(--FontSize) + 2px);
+     color: var(--ColorLink);
+     font-weight: 600;
+     margin-bottom: var(--Space);
+     letter-spacing: 0.1px;
 }
 .myedits ul {
-    display: flex;
-    gap: var(--Space);
-    flex-wrap: wrap;
-    margin: 0;
+     display: flex;
+     gap: var(--Space);
+     flex-wrap: wrap;
+     margin: 0;
 }
 .myedits ul li {
-    padding: 0;
-    position: initial;
+     padding: 0;
+     position: initial;
 }
-.myedits ul li::before{
-    display:none;
+.myedits ul li::before {
+     display: none;
 }
 .myedits ul li a {
-    border: 1px dashed var(--ColorBorders);
-    padding: 6px 8px;
-    font-weight: 500;
-    color: var(--ColorText);
-    border-radius: var(--Edges);
+     border: 1px dashed var(--ColorBorders);
+     padding: 6px 8px;
+     font-weight: 500;
+     color: var(--ColorText);
+     border-radius: var(--Edges);
 }
 .myedits ul li a:hover {
-    border: 1px dashed var(--ColorAccent);
-    color: var(--ColorLink);
+     border: 1px dashed var(--ColorAccent);
+     color: var(--ColorLink);
 }
 /* --- askpage */
 #contact-page {
-    margin-bottom: var(--ThemeGap);
-    padding-bottom: var(--ThemeGap);
-    border-bottom: 1px dashed var(--ColorBorders);
+     margin-bottom: var(--ThemeGap);
+     padding-bottom: var(--ThemeGap);
+     border-bottom: 1px dashed var(--ColorBorders);
 }
-.faq {
+.faq-container {
     display: flex;
     gap: 12px;
     flex-direction: column;
     margin: 0;
 }
-.faq .question {
+.faq-container header.question{
     cursor: pointer;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+    transition: background-color 350ms ease-in-out;
 }
-.faq .open .question {
+.faq-container h1 {
+    font-size: calc( var(--FontSize) + 0px);
+    font-weight: inherit;
+}
+.faq-container.open h1 {
     font-weight: 600;
     color: var(--ColorLink);
 }
-.faq .icon {
+.faq-container .icon {
     overflow: hidden;
     display: flex;
-    min-width: 30px;
-    min-height: 30px;
+    min-width: 33px;
+    min-height: 33px;
     border: 1px dashed var(--ColorBorders);
     border-radius: 5px;
     justify-content: center;
     align-items: center;
 }
-.faq svg {
+.faq-container .icon svg {
     --Iconsax-Color: var(--ColorText);
-    width: 16px;
-    height: 16px;
+    width: 19px;
+    height: 19px;
     display: flex;
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
+    transform: rotate(45deg);
+    transition: transform 450ms ease-in-out;
+    transform: rotate(0);
 }
-.faq .open svg {
-    display: flex;
-    -webkit-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
+.faq-container.open .icon svg{
     transform: rotate(-90deg);
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
 }
-.faq .answer {
-    display: none;
-    line-height: 1.8em;
-    background-color: var(--ColorBG);
+.faq-container article {
+    max-height: 0px;
+    overflow: hidden;
+    line-height: 1.6; 
+    transition: max-height 450ms ease-in-out;
+}
+.faq-container .article-inner {
+    line-height: var(--LineHeight);
     border-bottom: 1px dashed var(--ColorBorders);
-    padding: var(--Space) 0 var(--ThemeGapHalf) 0;
+    padding: 0 0 var(--ThemeGapHalf) 0;
     margin-bottom: var(--Space);
 }
-/* ---- terms */
-.terms-no, .terms-yes {
-    padding: 0 0 var(--ThemeGapHalf) 0;
+/* ---- codes*/
+#codes-container {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    flex-wrap: nowrap;
+    gap: var(--Space);
+    background-color: var(--ColorBG);
+    margin-top: -44px;
+    position: relative;
 }
-.terms-no a, .terms-yes a {
-    border-bottom: 1px solid var(--ColorBorders);
-    padding-bottom: 3px;
-    font-weight: 500;
+.codesbox {
+    border: 1px dashed var(--ColorBorders);
+    border-radius: var(--Edges);
+    padding: var(--Space);
 }
-.terms-yes {
-    border-top: 1px dashed var(--ColorBorders);
-    padding-top: var(--ThemeGapHalf);
+.codesbox h1 {
+    display: block;
+    margin: 0!important;
+    font-size: calc( var(--FontSize) + 2px);
 }
-.terms-no h2, .terms-yes h2 {
-    font-weight: 700;
+.codesbox p {
     margin: 0;
-    text-transform: uppercase;
-    color: var(--ColorLink);
+}
+.codesbox h1 a {
+    display: block;
+}
+/* ---- codes: terms */
+.terms-no,
+.terms-yes {
+     padding: 0 0 var(--ThemeGapHalf) 0;
+     display: flex;
+     flex-direction: column;
+     gap: 6px;
+}
+.terms-no a,
+.terms-yes a {
+     border-bottom: 1px solid var(--ColorBorders);
+     padding-bottom: 3px;
+     font-weight: 500;
+}
+.terms-no {
+     border-top: 1px dashed var(--ColorBorders);
+     padding-top: var(--ThemeGapHalf);
+}
+.terms-no h2,
+.terms-yes h2 {
+     font-weight: 700;
+     margin: 0;
+     text-transform: uppercase;
+     color: var(--ColorLink);
 }
 #decide {
     padding: var(--ThemeGapHalf) 0;
     border-top: 1px dashed var(--ColorBorders);
     display: flex;
-    gap: var(--Space);
-    flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
-#decide a {
-    color: var(--ColorBG);
-    background-color: var(--ColorLink);
-    padding: 10px var(--Space);
-    text-align: center;
-    font-weight: 400;
-    border-radius: var(--Edges);
-}
-#decide a:hover {
-    background-color: var(--ColorAccent);
-}
-/* ---- credit */
+/* ---- codes: credit */
 .credits {
-    padding: var(--ThemeGap) 0;
-    border-top: 1px dashed var(--ColorBorders);
+     padding: var(--ThemeGap) 0;
+     border-top: 1px dashed var(--ColorBorders);
 }
 .credits-first {
-    border-top: 0;
-    padding-top: 0;
-    background-color: var(--ColorBG);
-    margin-top: -44px;
-    position: relative;
+     border-top: 0;
+     padding-top: 0;
+     background-color: var(--ColorBG);
+     margin-top: -44px;
+     position: relative;
 }
 .credits h2 {
-    font-weight: 700;
-    margin: 0;
-    text-transform: uppercase;
-    color: var(--ColorLink);
+     font-weight: 700;
+     margin: 0;
+     text-transform: uppercase;
+     color: var(--ColorLink);
 }
