@@ -1,0 +1,84 @@
+*********************************** THIS PART IS THE CSS WHICH GOES RIGHT ABOVE </style> IN THE HTML CODE
+
+/* --- tags page */
+.mytags-container {
+    display: flex;
+    gap: var(--gap-large);
+    flex-direction: column;
+}
+.mytags {
+}
+.mytags h1 {
+    font-size: calc(var(--font-size) + 1px);
+    font-weight: 700;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.mytags ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing);
+    margin: 0;
+    line-height: 1;
+}
+.mytags ul li {
+     padding: 0;
+     position: initial;
+}
+.mytags ul li::before {
+     display: none;
+}
+.mytags ul li a {
+    display: block;
+    border: 0;
+    padding: 8px;
+    background-color: var(--color-bg-post);
+    color: var(--color-text);
+    border-radius: 4px;
+}
+.mytags ul li a:hover {
+    background-color: var(--color-accent-1);
+    color: var(--color-bg-post);
+}
+
+
+
+********************************** THIS IS THE HTML which you put into a standard layout page. I've sent you an image of it.
+********************************** remember to choose the html-viewer every time you go to edit your tags or you will
+********************************** lose the styles of it. tumblr is weird like that. I've made a space between each section of tags,
+********************************** but once you save the page and close it, those spaces will disappear, refer back to this to see
+********************************** what you need to copy to make a new section :)
+
+<div class="mytags">
+<h1>this is a title</h1>
+<ul>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+</ul>
+</div>
+
+<div class="mytags">
+<h1>this is a title</h1>
+<ul>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+</ul>
+</div>
+
+<div class="mytags">
+<h1>this is a title</h1>
+<ul>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+<li><a href="/tagged/something">tag title</a></li>
+</ul>
+</div>
+
