@@ -1,0 +1,3488 @@
+<!DOCTYPE html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<link href="//fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+<script src="https://static.tumblr.com/2pnwama/DLppehqvd/feathericons.js"></script>
+
+<!-------MUSIC PLAYER BY GLENTHEMES------->
+<script src="//glenthemes.github.io/-music-/glenplayer06.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $('.fade').click(function(){
+          $('.popup').fadeOut(); 
+       });
+    });
+</script>
+
+<!------
+
+
+
+
+                            candlelight
+                            
+                            @odeysseus
+            
+
+
+
+- please check what the page looks like when you exit customise and open it in a new tab before telling me it's not working!
+- if you tag fics with "fave" a heart will appear in the corner.
+- if you tag fics with "complete ao3" a tick will appear in the corner.
+- if you don't want the star rating, search for 32% and replace it with 49%, then just delete the <span>★★★★</span> from each box. 
+- to replace the accent color, search for #a4afc1 and replace it with a color of your choice using colorpicker.
+------>
+
+
+<title> fic recs </title> <!--title-->
+
+
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'><script src="https://kit.fontawesome.com/4573bcadd3.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="https://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script><script src="https://static.tumblr.com/aptzszz/s5fp15zyp/candlelight.js"></script><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<script type="text/javascript">
+$(function(){$window=$(window);$link=$("#scroll");$link.click(function(){$("html, body").animate({scrollTop:0},"slow")});$window.scroll(function(){if($window.scrollTop()<=0){$link.fadeOut("slow")}else{$link.fadeIn("fast")}})});
+</script>
+
+<style type="text/css">
+
+/*-------MUSIC PLAYER BY GLENTHEMES-------*/
+:root {
+   --Music-Player-Vinyl:#750eb7;
+   --Vinyl-Icon-Size:17px;
+   --Vinyl-Spin-Speed:3.5s;
+   --Music-Controls:#000;
+   --Music-Controls-Size:15px;
+   --Music-Title-Font-Size:13px;
+   --Music-Title-Color:#000;
+}
+.glenjams-06 {
+   display:none;
+   position:fixed;
+   top:0;margin-top:15px;
+   left:0;margin-left:15px;
+   z-index:99;
+}
+
+.pasta {
+   display:flex;
+   align-items:center;
+}
+
+.vinyl-spin {
+   animation:recordspin var(--Vinyl-Spin-Speed) linear infinite;
+   -webkit-animation:recordspin var(--Vinyl-Spin-Speed) linear infinite;
+   -moz-animation:recordspin var(--Vinyl-Spin-Speed) linear infinite;
+   -o-animation:recordspin var(--Vinyl-Spin-Speed) linear infinite;
+}
+
+.vinyl-pause {
+   animation-play-state:paused;
+   -webkit-animation-play-state:paused;
+   -moz-animation-play-state:paused;
+   -o-animation-play-state:paused;
+}
+
+@-webkit-keyframes recordspin {
+   from {
+       -webkit-transform:rotate(0deg);
+       -o-transform:rotate(0deg);
+       transform:rotate(0deg);
+   }
+   to {
+       -webkit-transform:rotate(360deg);
+       -o-transform:rotate(360deg);
+       transform:rotate(360deg);
+   }
+}
+
+@keyframes recordspin {
+   from {
+       -ms-transform:rotate(0deg);
+       -moz-transform:rotate(0deg);
+       -webkit-transform:rotate(0deg);
+       -o-transform:rotate(0deg);
+       transform:rotate(0deg);
+   }
+   to {
+       -ms-transform:rotate(360deg);
+       -moz-transform:rotate(360deg);
+       -webkit-transform:rotate(360deg);
+       -o-transform:rotate(360deg);
+       transform:rotate(360deg);
+   }
+}
+
+.vinyl, .vinyl svg {
+   width:var(--Vinyl-Icon-Size);
+   height:var(--Vinyl-Icon-Size);
+}
+
+.music-controls {
+   margin-left:10px;
+   margin-bottom:-5px;
+   width:var(--Music-Controls-Size);
+   overflow:hidden;
+   cursor:pointer;
+}
+
+.music-controls svg {
+   width:var(--Music-Controls-Size);
+   height:var(--Music-Controls-Size);
+   color:var(--Music-Controls);
+   stroke-width:1.5px;
+}
+
+.pausee {display:none;}
+
+.beff {display:none;}
+.aff {display:block;}
+
+.music-title {
+   margin-left:8px;
+   margin-bottom:1px;
+   font-family:work sans;
+   font-size:var(--Music-Title-Font-Size);
+   color:var(--Music-Title-Color);
+}
+
+.popup { 
+    width:100%;height:100%;
+    top:0;left:0;
+    position:fixed;z-index:234134134;
+    background:rgba(255,255,255,.9); /* popup background - change to #fff for white instead */
+}.fade { width:100%;height:100%;top:0;left:0; }
+.pop { 
+    top:50%;left:50%;transform:translate(-50%,-50%);
+    width:300px; /* popup box width */
+    text-align:center;
+    position:fixed; 
+}
+
+#scroll:link, #scroll:visited {display: none;position: fixed;bottom:30px;left: 15px;font-size:9px;text-transform:uppercase;letter-spacing:1px;}
+
+@-webkit-keyframes fadein {
+        0%   {opacity: 0;}
+        100% { opacity: 1; }
+}
+ 
+@-moz-keyframes fadein {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+}
+ 
+@keyframes fadein {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+}
+ 
+ 
+::-webkit-scrollbar{ height:3px;width:1px;}
+::-webkit-scrollbar-thumb {background:#eee;}
+::-webkit-scrollbar-track {background:transparent;}
+.tmblr-iframe { display:none; }
+a,.button { transition:0.2s ease-in;-webkit-transition:0.2s ease-in;-moz-transition:0.2s ease-in;}
+b,strong { color:#9a61be; /* color of bold text */ }
+
+a:hover {
+    color:#9a61be; /*link hover*/
+    text-decoration:none;
+}
+ 
+
+body {
+    background:#fff; /*background*/
+    font-family:'Merriweather', serif; /*font*/
+    font-size:11px; /* font size */
+    font-weight:300;
+    line-height:190%;
+    color:#000000; /* text color */
+    -webkit-animation-name: fadein;-webkit-animation-duration: 1s;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+   
+}
+ 
+a {
+    color:#750eb7; /*links*/
+    text-decoration:none;
+}
+
+#container { 
+    width:900px;
+    margin:100px auto;
+}
+
+
+h1 { 
+    font-weight:400;
+    color:#000000;
+    font-size:12px;
+    display:inline;
+    border-bottom:1px solid #750eb7;
+} 
+
+h2 { 
+    font-weight:400;
+    color:#000000;
+    font-size:11px;
+    display:inline;
+    border-bottom:1px solid #750eb7;
+    margin-right: 7px;
+} 
+
+header a,h1 { margin-right:7px;}
+header a:first-of-type, article a:first-of-type { margin-left:7px; } 
+header { width:860px;margin:auto; }
+
+#counters {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.online-count span, .hit-count span {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #750eb7;
+    width: auto;
+    text-align: left;
+    display: inline-block;
+}
+.button {
+    background:#fff;
+    border:0;
+    border-radius:0;
+    outline:0;
+    padding:0;
+    display:inline-block;
+    cursor:help;
+    text-shadow:none;
+    box-shadow:none;
+    line-height:inherit;
+    color:#000000;
+    font-size:inherit;
+    font-family:inherit;
+    letter-spacing:inherit;
+    margin-right:10px;
+}
+
+.button:hover { color:#9a61be; }
+.button:active,.button.is-checked { color:#9a61be; }
+.button-group:last-of-type { border:none; } 
+.button-group:first-of-type { margin-top:20px;}
+ 
+article { 
+    position:relative;
+    width:260px;
+    margin:20px;
+    box-sizing:border-box;
+    padding:15px;
+    border:1px solid #eee;
+    display:inline-block;
+    transition-duration:.35s;
+    -moz-transition-duration:.35s;
+    -webkit-transition-duration:.35s;
+    -o-transition-duration:.35s;
+} 
+
+section { margin-top:40px;}
+.fave:after {font-size:10px;top:2px;right:5px;content:"\f004";position:absolute;color:#aa4271;font-family:'Font Awesome 5 Free'; } 
+.complete:before {font-size:10px;top:2px;right:5px;content:"\f14a";position:absolute;color:#4286f4;font-family:'Font Awesome 5 Free'; } 
+.mine { background:#fafafa; } 
+.mine .tags { background:#fff; }
+.mine span { width:calc(49% - 16px); }
+.complete.fave:before { top:14px; }
+.d i { color:#444;display:block; } 
+.d { margin:10px 0px;display:block;position:relative;}
+.tags i { margin-right:5px; } 
+.tags i:before { content:'#'; }
+.c { bottom:27px;right:27px;position:fixed; }
+
+span { 
+    background:#fff;
+    margin:0px 2px;
+    padding:5px;
+    border:1px solid #eee;
+    color:#750eb7;
+    width:calc(49% - 16px);
+    text-align:center;
+    display:inline-block;
+} 
+.tags { 
+    margin:10px -15px -15px;
+    background:#fafafa;
+    padding:5px 15px;
+    border-top:1px solid #eee;
+} 
+
+</style>
+</head>
+<body>
+
+<!-------MUSIC PLAYER BY GLENTHEMES------->
+<div class="glenjams-06">
+<div class="pasta">
+   <div class="vinyl"></div>
+   <div class="music-controls">
+       <div class="playy"><i data-feather="play"></i></div>
+       <div class="pausee"><i data-feather="pause"></i></div>
+   </div>
+   <div class="music-title">strawberries & cigarettes</div>
+
+   <audio id="audio" src="https://drive.google.com/uc?export=download&id=1vDo1qIAexXRHjjwI1UgCXlDGBW25iTPI" type="audio"></audio>
+</div><!--pasta-->
+</div><!--glenjams-06-->
+<!----end music player---->
+
+<!--<div class="popup"><div class="fade"></div>
+    <div class="pop"><!--start editing
+        <b>update: 31/07/2022 </b>
+        <br>around 25 new recs have been added which include twitter fics as well so scroll down to find them!
+        <br>hope you enjoy reading fics from this list. i would love to know your thoughts about the fics and this page so please send them <a href="https://curiouscat.live/hyyhblissx">here</a> or <a href="https://taekookrecsx.tumblr.com/ask">here</a>.<!--end editing
+        <p><b>click anywhere to view posts</b></p> 
+    </div>
+</div>-->
+
+<a href="javascript:;" id="scroll" rel="nofollow"><i class="fa fa-arrow-up"></i></a>
+
+<div id="container">
+        
+    <header> <!--start header-->
+    
+        <h1>fic recs</h1> :: <!--main title--> 
+        
+        <!--links: add or delete as you wish-->
+       <!-- remove the brackets if want 'home ask dash' back-->
+        <a href="/">home</a> 
+        <a href="/ask">inbox</a> 
+        <a href="https://twitter.com/hyyhblissx">twitter</a>  
+        <a href="https://curiouscat.live/hyyhblissx">curiouscat</a>
+        <a href="https://taekookrecsx.tumblr.com/tagged/recs%20by%20you">recs sent by followers</a>
+        
+        <div id="counters">
+        
+        
+            <div class="fic-count"><h2>fic count</h2> :: <a>112</a></div>
+            
+            
+            <div class="online-count"><h2>online visitors</h2> :: <script language="JavaScript">var fhs = document.createElement('script');var fhs_id = "5680329";
+var ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + " x " + window.screen.height;
+fhs.src = "//freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=&e2=&r="+ref+"&m=0&wh="+w_h+"&a=1&pn="+pn+"";
+document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
+</script>  </div>
+            
+            
+            <div class="hit-count"><h2>hits</h2> :: <script language="JavaScript">var fhsh = document.createElement('script');var fhs_id_h = "3371794";
+fhsh.src = "//freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=&a=1";
+document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
+</script>  </div>
+            
+            
+            
+            
+        </div>
+            
+<div class="filters"> <!--start filters - you can add or delete groups as required. change all the .FILTER to one word filters, keeping the . in front of each -->
+
+<!--filter group 1 (fandom)-->
+<div class="button-group js-radio-button-group" data-filter-group="category">
+<button class="button is-checked" data-filter="">all categories</button>
+<!--filter buttons-->
+<button class="button" data-filter=".abo"> alpha/beta/omega </button>
+<button class="button" data-filter=".mafia"> mafia/detectives </button>
+<button class="button" data-filter=".fwb"> friends with benefits </button>
+<button class="button" data-filter=".canon"> canon compliant </button>
+<button class="button" data-filter=".enemies"> enemies to lovers </button>
+<button class="button" data-filter=".ceo"> ceo/rich/sugar daddy </button>
+<button class="button" data-filter=".marr"> arranged marriage </button>
+<button class="button" data-filter=".est"> established relationship </button>
+<button class="button" data-filter=".fake"> fake/secret relationship </button>
+<button class="button" data-filter=".college"> college </button>
+<button class="button" data-filter=".work"> colleagues </button>
+<button class="button" data-filter=".friends"> friends to lovers </button>
+<button class="button" data-filter=".str"> strangers to lovers </button>
+<button class="button" data-filter=".unreq"> unrequited love </button>
+<button class="button" data-filter=".post"> post break-up </button>
+<button class="button" data-filter=".soul"> soulmates </button>
+<button class="button" data-filter=".fan"> fantasy </button>
+<button class="button" data-filter=".parent"> single parent/parenthood </button>
+<button class="button" data-filter=".hist"> historical/royalty </button>
+<button class="button" data-filter=".body"> bodyguard </button>
+<button class="button" data-filter=".uncat"> unique </button>
+</div>
+
+<!--filter group 2 (authors -->
+<div class="button-group js-radio-button-group" data-filter-group="author">
+<button class="button is-checked" data-filter=""> all platforms</button>
+<!--filter buttons -->
+<button class="button" data-filter=".ao3"> archiveofourown </button>
+<button class="button" data-filter=".twt"> twitter </button>
+<button class="button" data-filter=".wat"> wattpad </button>
+</div>
+
+<!--filter group 2 (pairing)-->
+<div class="button-group js-radio-button-group" data-filter-group="rating">
+<button class="button is-checked" data-filter="">all ratings</button>
+<!--filter buttons-->
+<button class="button" data-filter=".exp"> explicit </button>
+<button class="button" data-filter=".non"> non-explicit </button>
+</div>
+
+<!--filter group 4 (misc. categories)-->
+<div class="button-group js-radio-button-group" data-filter-group="tags">
+<button class="button is-checked" data-filter="">all tags</button>
+<button class="button" data-filter=".fave">faves</button>
+<button class="button" data-filter=".cried">tearjerker</button>
+<button class="button" data-filter=".angst">angst</button>
+<button class="button" data-filter=".fluff">fluff</button>
+<button class="button" data-filter=".mpreg"> mpreg </button>
+<button class="button" data-filter=".mcd"> mcd </button>
+<!--filter buttons (don't change the 'fave' filter above or the heart won't show up for favorite works; don't change the 'mine' or your own fics won't have a different background color)-->
+</div>
+<!--end filters-->
+</div>
+</header>
+
+<section>
+<!--start fics
+
+NOTE:
+
+when tagging each fic below, the filters should correspond to the .FILTER you created above. if you wanted it to show up for the filters .hp, .fave and .wip, for example, you'd tag it like this: <article class="hp fave wip"> 
+you can have as many filters as you like for each fic.
+
+-->
+
+<!--example fic-->
+<article class="fave complete ao3 uncat str exp cried angst mcd">
+
+<h1>somebody to love</h1> <!--title--> :: 
+<!--links: add or delete as required-->
+<a href="https://archiveofourown.org/works/16962474">ao3</a>
+
+<div class="d"> <!--start description-->
+
+Falling in love with another man during the 1950s was never something Taehyung or Jeongguk envisioned. Especially not when they were both married and had beautiful wives.
+<p>
+Or, The story of two lovers who were never meant for each other, but destiny found its way anyway. </p>
+
+<!--end description--> </div>
+
+<span>explicit</span> <!--age rating box-->
+<span>125k</span> <!--word count box-->
+
+<div class="tags"> <!--tags for extra info-->
+<i>so beautifully written and hurts so bad</i>
+<i>took a few days to recover, you fall in love with the characters</i>
+<i>one of the best </i>
+<!--end tags--> </div>
+</article>
+<!--end example fic-->
+
+<!--example fic-->
+<article class="fave complete ao3 canon unreq fwb exp friends cried angst">
+
+<h1>loving you is; blue & grey</h1> <!--title--> :: 
+<!--links: add or delete as required-->
+<a href="https://archiveofourown.org/works/29018217">ao3</a>
+
+<div class="d"> <!--start description-->
+
+“I think I like Jimin, hyung,” Jungkook had whispered last night, lips rubbing against Taehyung’s neck, arms tightening around his waist, “I like him very much.”
+
+<p>“I love you,” Taehyung thought, pressing down on his lips to not let a single word out, “I am in love with you.” </p>
+
+<p>“Hyung,” Jungkook had buried his face in Taehyung’s chest, “tell me what to do.” </p>
+
+<p>“Love me back,” Taehyung wanted to scream, could feel the words bubbling on his tongue, burning his mouth, “love me as I love you.” </p>
+
+<!--end description--> </div>
+
+<span>explicit</span> <!--age rating box-->
+<span>160k</span> <!--word count box-->
+
+<div class="tags"> <!--tags for extra info-->
+<i>read so many times but never gets old</i>
+<i>beautifully written especially in specific parts where you are just like WOW </i>
+<!--end tags--> </div>
+</article>
+<!--end example fic-->
+
+<!--example fic-->
+<article class="fave complete ao3 cried abo soul exp college angst mpreg">
+
+<h1>disastrous (kill me or mate me)</h1> <!--title--> :: 
+<!--links: add or delete as required-->
+<a href="https://archiveofourown.org/works/20124838/chapters/47675770">ao3</a>
+
+<div class="d"> <!--start description-->
+
+<p>One second he was staring at a very angry true blood Alpha glaring at him, the next second he was on the floor from a punch with an agonizing scream of MATE! </p>
+
+Kim Taehyung has always known he was unlucky, losing his parents at a young age and almost dying in a store room fits perfectly, but to top it all, he is the mate of a True Blood Alpha who would rather kill him than mate him.
+
+<!--end description--> </div>
+
+<span>explicit</span> <!--age rating box-->
+<span>97k</span> <!--word count box-->
+
+<div class="tags"> <!--tags for extra info-->
+<i>what a plot! cant stop reading once you start</i>
+<i>growth and development of characters and story is amazing</i>
+<!--end tags--> </div>
+</article>
+<!--end example fic-->
+
+<!--example fic-->
+<article class="fave complete ao3 mafia exp enemies angst">
+
+<h1>kill to kiss you</h1> <!--title--> :: 
+<!--links: add or delete as required-->
+<a href="https://archiveofourown.org/works/23930416/chapters/57545482">ao3</a>
+
+<div class="d"> <!--start description-->
+
+Jeon Jungkook, the newly minted leader of the Yong Jegug, carries the weight of his fragile empire on his shoulders. Desperate for a distraction, he goes to a notorious underworld brothel where Kim Taehyung, temptation wrapped in silk and lace, is auctioning off his virginity. 
+
+<!--end description--> </div>
+
+<span>explicit</span> <!--age rating box-->
+<span>198k</span> <!--word count box-->
+
+<div class="tags"> <!--tags for extra info-->
+<i>its so fucking hot, i loveee dark fics</i>
+<i>morally ambiguous characters</i>
+<i>leaves you peacefully satisfied in the end, beautifully written (i mean the summary itself is so attractive)</i>
+<!--end tags--> </div>
+</article>
+<!--end example fic-->
+
+<!--example fic-->
+<article class="fave complete ao3 mafia enemies fwb exp cried angst mcd">
+
+<h1>red looks good on you</h1> <!--title--> :: 
+<!--links: add or delete as required-->
+<a href="https://archiveofourown.org/works/24289672/chapters/60334096">ao3</a>
+
+<div class="d"> <!--start description-->
+
+In a city divided by two powers, the Kim and Jeon gangs have ruled the streets of Seoul for decades. However, when a new uprising group threatens both of their sides, it calls for a new resolution amongst Seoul’s highest leaders. 
+
+<!--end description--> </div>
+
+<span>explicit</span> <!--age rating box-->
+<span>191k</span> <!--word count box-->
+
+<div class="tags"> <!--tags for extra info-->
+<i>very dark with fucked up characters</i>
+<i>but you just cant stop reading, amazing plot and buildup</i>
+<i>the end had me crying so hard, the letter....</i>
+<!--end tags--> </div>
+</article>
+<!--end example fic-->
+
+<!--example fic-->
+<article class="fave complete ao3 abo ceo exp str angst mpreg mcd">
+
+<h1>o, swear not by the moon</h1> <!--title--> :: 
+<!--links: add or delete as required-->
+<a href="https://archiveofourown.org/works/27133130/chapters/66258293">ao3</a>
+
+<div class="d"> <!--start description-->
+Kim Taehyung doesn't let anyone to get close to him more than he allows them, always surrounded by the strong walls so that no one can know the reality. He's a determined young guy who wants to show the world what he's capable of, even when the ghosts from the past haunt him---
+
+<p>Even when he wants someone to embrace him tightly despite telling them he doesn't need anyone. And he's extremely scared how Jeon Jeongguk affects him in ways he can't even describe.</p>
+
+<!--end description--> </div>
+
+<span>explicit</span> <!--age rating box-->
+<span>136k</span> <!--word count box-->
+
+<div class="tags"> <!--tags for extra info-->
+<i>very unexpected ending, literally breaks your heart </i>
+<i>but still can be called a happy ending? i cant explain</i>
+<i>beautiful plot and amazing characters</i>
+<!--end tags--> </div>
+</article>
+<!--end example fic-->
+
+<!--example fic-->
+<article class="fave complete ao3 mafia enemies exp angst">
+
+<h1>lost in translation</h1> <!--title--> :: 
+<!--links: add or delete as required-->
+<a href="https://archiveofourown.org/works/13305912/chapters/30453024">ao3</a>
+
+<div class="d"> <!--start description-->
+
+Jeon Jeongguk and his elder brother rule over Seoul, a hidden heel digging within the city for years now. As rulers of their gang, the Geom-Eun Dogsa, the world of lies and cruelty comes easily. Until a certain Kim Taehyung walks into Jeongguk's life, that is.
+
+<!--end description--> </div>
+
+<span>explicit</span> <!--age rating box-->
+<span>151k</span> <!--word count box-->
+
+<div class="tags"> <!--tags for extra info-->
+<i>dark fic and fucked up characters</i>
+<i>things get better in the 2nd half, the pain is just... </i>
+<i>mob boss jeon is fucking hot</i>
+<!--end tags--> </div>
+</article>
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" fave complete ao3 exp abo soul cried angst"> 
+
+<h1>golden string</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/25946761">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+If a fated mate is a person made for you, a soulmate is the other half of your soul that will complete you and make you full for the first time. No one will ever love you like them, and you’ll never love anyone as you love them.
+
+<p> Then why… Why is Taehyung feeling like someone ripped his very own soul, why is he feeling like his heart stopped beating and was thrown into freezing water, why is he feeling like every nightmare he has ever had is better than listening to the hurtful words his soulmate is saying to him..?
+“You are not what I wanted...” </p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>189k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>the characters need the biggest hug</i> 
+<i>its somehow fluffy and angsty at the same time</i> 
+<i>wholesome fic which makes you laugh cry blush altogether</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" fave complete ao3 exp abo soul college ceo str mpreg cried angst fluff"> 
+
+<h1>the lovegen app</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/23235037">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+Taehyung is an omega living in a world were genotypes are everything and where people let their relationships get controlled by an app. But soon he learns how deep a soulmate bond can be when he meets Jeongguk. But careful, a heartbreak can be fatal for an alpha. And the world seems to be against them.
+
+<!--end description--> </div> 
+<span>explicit</span> <!--age rating box--> 
+<span>204k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>one of the best fic i have ever read</i> 
+<i>its like so perfect and you cant help falling in love</i> 
+<i>so beautifully written, you literally live it with the characters and nostalgia after the time skip!!</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 twt fave complete exp angst fluff str fwb work college ceo post uncat parent"> 
+
+<h1>fvr</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30617387">ao3</a>,
+<a href="https://twitter.com/yunayuki16/status/1380937736144650240">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p><strong><i>They say that we don&apos;t meet people by accident. They are meant to cross our paths for a reason.</i></strong></p>
+<p>Senior film major student Jeon Jeongguk only wanted to find a new part-time job after getting fired from his last one, two months before graduation.</p>
+<p>Broke and in no position to choose, he then decided to apply as a bartender for a strip club. He doesn&apos;t really care about the kind of place he&apos;ll be lending his service to; illegal or not. He&apos;s only there for the money and nothing else.</p>
+<p>That is until he met Kim Taehyung; a stripper that is as broke as him, if not more.&mdash; Someone who keeps on crushing down his walls; making him break his own rules.</p>
+<p>It started off fine though, just sex and nothing else.&nbsp;<em>&apos;No strings attached&apos;</em> they said, yet Jeongguk found himself getting tangled around the twisted ropes of fate.&mdash; A maze that seems too difficult for him to escape.</p>
+<p><em>&quot;It&apos;s sad, y&apos;know? What money does to people.&quot;</em> <em>-Ozzy Osbourne</em></p>
+<!--end description--> </div> 
+
+
+<span>yunayuki16</span> <!--age rating box--> 
+<span>203k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>THIS OMG THISS! i was in loveee with this, just couldnt stop reading</i>
+<i>read it in 1 day...freaking 200k in 1 day</i>
+<i>these tags are too small for me to express my love for fvr and the pole dance parttt!!</i>
+<i>it is so beautifully painful... this is read on ao3 like a FUCKING BESTSELLER NOVEL</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 fave complete abo enemies ceo marr str unreq exp angst fluff mpreg"> 
+
+<h1>Is it too much to ask for something great?</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/26510398">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>Taehyung comes from a lead family of one of the biggest packs in Korea. Since childhood he has been taught how to be a good omega for his future alpha mate. He has always known his parents would arrange the marriage, that was how it worked in families like his. When he&rsquo;s promised to Jeongguk, the heir of the biggest Korean pack, he is over the moon because his dreams about handsome, powerful alpha come true. But years pass between their first meeting and the wedding and Taehyung learns the hard way that sometimes dreams are crushed because Jeongguk suddenly doesn&rsquo;t show any interest in him. There come lots of moments when he stops believing they might fall in love but he is not ready to give up on his dream without fighting.&nbsp;</p>
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>171k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>damn the way i love this series, this fic was one of my firsts so imagine the pain</i>
+<i>the character development is AMAZING and also everything is so beautifully written</i>
+<i>they always write the best possessive kook</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 fave complete abo est ceo marr parent uncat exp angst fluff mpreg"> 
+
+<h1>We have to find something great again</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/32360008">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>Five years into marriage, Jeongguk and Taehyung are in love and have two beautiful and healthy children and their lives couldn&rsquo;t be better. But then someone from the past returns and almost ruins everything and they need to figure out how to get back what they had, so they get on a new journey of having something great.&nbsp;</p>
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>102k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i read this alot after the 1st book</i>
+<i>damn this one was also amazing! like its was so domestic yet angsty yet sweet</i>
+<i>i love how they finally get through and the end leaves my heart at peace</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp fwb str angst fluff"> 
+
+<h1>love, i have wounds</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/12568164">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+Jungkook meets Taehyung in a dirty club with terrible music and harsh lights that color his skin blue.
+<p>Jungkook has just started feeling lonely when he meets Taehyung, who seems to have been lonely his entire life.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>79k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>very beautifully written, the growth is amazing</i> 
+<i>the club scene is hot </i> 
+<i>tae needs a hug and kook is there for that</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst abo marr str fluff mpreg"> 
+
+<h1>fading dawn</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/25557145/chapters/62017072?view_adult=true">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jungkook, the future head Alpha of a huge pack found himself compulsively mated for life to Taehyung a reserved and strange Omega, loner and doesn’t belong to any pack. A rather unusual sight that’s looked down upon in their world.</p>
+
+<p>What happened ruined their lives but they must tolerate each other, at least until their pup would be born.</p>
+
+<p>They are stuck under the same roof not in anyway because of love.
+
+or this is what they believed..</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>28k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>falling in love slowly</i>
+<i>very sweet and makes your heart feel warm</i>
+<i>ending climax proves they are made for each other</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" fave complete ao3 exp angst fluff mpreg abo soul"> 
+
+<h1>wherever you are (i’ll go back to you)</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/18460832">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>&ldquo;All I ever wanted was for someone to respect me. When they did exactly that, I knew I was doomed.&rdquo;</p>
+<p>Or;</p>
+<p>Omega Taehyung never liked alphas and their arrogant attitudes. Being forced to mate within his pack was his final straw, deciding to run away. What happens when he ends up at an island, meeting a new pack- with an alpha with the most intoxicating scent?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>91k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>omg i thought this was deleted</i>
+<i>its the one with mermaid hobi!!</i>
+<i>alot of things about scents, scenting and matieng etc. its a proper traditional abo</i>
+<i>what a plot, its like a whole movie</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst fluff college enemies"> 
+
+<h1>fall asleep (fall for you)</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/11193654">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+They say when you fall in love you can’t fall asleep, but now that I’ve met you I feel like I finally can.”
+
+<p>A University AU where Jungkook and Taehyung become roommates. But Jungkook has insomnia and can't fall asleep with other people and Taehyung can't fall asleep alone.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>150k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>its just so adorable how they fall in love</i>
+<i>and get used to each other</i>
+<i>i wanna have what they have</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst fwb fan college"> 
+
+<h1>realms between us</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/18531685/chapters/43922065">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+Jeongguk doesn’t know how spirit magic or Ouija boards work. He assumes it takes something a lot more complicated than a drunk man asking for a sex demon to show up for it to actually happen. Something like cutting your hand and letting your blood drip onto the petals of a rare flower. Or saying something religious into a mirror while doing the Macarena.
+
+<p>That's how Jeongguk knows that this is a prank.</p>
+
+<p>That's how he knows that the boy sitting on his bed claiming to be an incubus is lying.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>100k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>its like a sex ed class</i>
+<i>not much angst just a lil in the end but when tae comes back!!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst str marr ceo "> 
+
+<h1>symbiosis</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22992613/chapters/54971119">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+“So that means you’re okay with it?” Jungkook asks, his tone an odd mix of surprise and sarcasm.
+
+<p>Taehyung hums his affirmation, making Jungkook finally look at him. His eyes are unreadable, even to him. They search over Taehyung’s face before Jungkook’s full body turns and they’re a breath apart.</p>
+
+<p>“Why?”</p>
+
+<p>“It’s a good union,” Taehyung explains simply. “Good for my family and yours. For you and I specifically.”</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>227k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>hot lawyer husbands</i>
+<i>nice family drama where they are there for each other</i>
+<i>an iconic fic</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst abo enemies college"> 
+
+<h1>make it taste like love</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/18350978/chapters/43447211">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+Taehyung and Jungkook are two alphas who hate each other until one morning, Taehyung wakes up as an omega and Jungkook is the only one who can help him figure out what happened....too bad Taehyung is now desperate to bare his neck to Jungkook instead of fighting.
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>159k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>very cute story where you see them slowly fall in love</i>
+<i>alpha-alpha dynamics are hot</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" fave complete ao3 exp angst abo mpreg college unreq parent ceo friends fluff"> 
+
+<h1>the colour of love is...</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/23258407">ao3</a>,
+<a href="https://www.mediafire.com/file/lcozh0nk12a237v/The+Color+of+Love+is.pdf/file">pdf</a>
+
+<div class="d"> <!--start description--> 
+
+Taehyung was 9 when big doe eyes met his brown feline ones for the first time.
+<p>He was 16 when he realized he loves the owner of those eyes since the beginning.</p>
+<p>He was 18 when he left the love of his life to get out of the way of his happiness. But it's alright. It has to be. There was no time for the heavy ache in his heart and prickling tears in his eyes because now he was not alone.</p>
+<p>Taehyung was 19 when he had his son.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>51k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>my my its so beautifully written</i>
+<i>very sweet and the characters are just perfect so is their dynamics together</i>
+<i>lil misunderstandings and i love when we get to know kook's pov</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst abo friends"> 
+
+<h1>no matter what</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/16558112">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+From the very start, Taehyung had it all figured out.
+<p>He and Jeongguk would get together as soon as they had both presented. He as the alpha, who will protect and love his precious friend and Jeongguk as the omega, who will look up to and cherish his hyung. This is how the world was always supposed to be: the two of them together no matter what. Taehyung is sure of it.</p>
+<p>That is until his 21st birthday, when the universe decides to go ahead and make Taehyung an omega. That certainly puts a hole in his plans.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>29k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>its so sweet i wanna cry</i>
+<i>tae is a lil insecure but they get through it slowly</i>
+<i>the growth and development in this fic!!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 non angst ceo enemies marr angst fluff"> 
+
+<h1>a rose by any other name</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/31082855">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+A modern Romeo & Juliet with a twist — Taehyung and Jungkook’s houses may not be at war (far from it, actually, given that they’re planning an arranged marriage between their two sons to solidify a corporate merger), but the two boys have enough enmity for one another to rival a generations-long blood feud.
+<p>Featuring: Jungkook as a Juliet who’d rather swallow poison than be married off to the pretentious Kim heir; and Taehyung as a Romeo who may be just as lovelorn as the titular character, but would rather drive a dagger into his own chest than admit it.</p>
+<p>So not like Romeo and Juliet at all, basically.</p>
+
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>34k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>impressive writing, emotions and thoughts beautifully expressed</i>
+<i>misunderstandings lead to angst and chaos</i>
+<i>the laundry part is hilarious but cute</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp abo college fluff"> 
+
+<h1>laced with honey</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/25561756/chapters/62029684">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+Alpha Jeon Jungkook really really fucking hates art history. It's such a pointless class. Why did he even need it if he's a business major? Jungkook asks himself these questions over and over as he makes his way to the useless elective.That is, until he finally gets there and is faced with the most stunning omega he's ever seen. And of course, the beautiful omega is none other than his professor.
+
+<p>This was going to be fun.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>56k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>idky but i absolutely lovee this fic, like its just so cute</i>
+<i>if you like possessive and whipped kook this is the fic for you</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 non cried angst college enemies"> 
+
+<h1>ellipsism</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/14916719/chapters/34553375">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+If you slap a jester's hat on the monster in the closet it ceases to be scary but to itself, it will still be a monster. If Jeongguk opens his palms he closes them instantly because he doesn't like the ugliness he sees. The neon light leaks through his pores and he ceases to be bright.
+
+<p>Pain changes people. It certaintly changes Jeon Jeongguk.</p>
+
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>72k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>very heavy angst</i>
+<i>it deals with suicidal thoughts and such heavy topics</i>
+<i>very different from a normal love story but at the same time very interesting</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst abo mafia soul"> 
+
+<h1>i know i was born to be yours</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/18401150/chapters/43579010?view_adult=true">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+Taehyung is a regular omega, living a normal life but there is a dark past hanging above him. He moved to Seoul after his parents got murdered by an unknown pack. His current life would be much better if he didn’t have an abusive alpha boyfriend that he wants to leave desperately but is too afraid to do so.
+
+<p>One day, an alpha walks into the café he works in and flips his world upside down. There is just something about the man that is pulling Taehyung to him, almost like some invisible force. Soon Taehyung discovers that the alpha, Jeongguk, is a very dangerous man. But why does this dangerous man treat him so much better than his boyfriend? Maybe that is exactly what Taehyung needs, a strong alpha to protect him and save him from his current relationship.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>77k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>typical btslarryaf story</i>
+<i>you get angst fluff protectiveness and good smut</i>
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst mafia parent"> 
+
+<h1>refrigerator humming, chewing gum and instant karma</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/9500051">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+Taehyung's been trying his hardest to avoid Yoongi's criminal life for a long ass time, but a cute kid and his infuriating father keep pulling him deeper into the mix.
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>61k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>taegi bros is the best thing a writer can include in stories</i>
+<i>its very wholesome and you will love ot7 in it</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 non angst abo ceo soul marr parent mpreg est "> 
+
+<h1>the babysitter</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/13837764?view_full_work=true">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+Being the babysitter to a celebrity couple is both easier and harder than Jimin could've ever expected.
+
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>58k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>its entirely written in jimin's pov</i>
+<i>so its basically vey different and has an amazing plot</i>
+<i>many misunderstandings but they love each other alot!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst fluff abo ceo"> 
+
+<h1>i'm sorry</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/23689696">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Kim Taehyung was an outgoing alpha. A desired alpha. The CEO of one of the most profitable luxury stores and fashion lines in the country.</p>
+<p>When he went undercover in his friend Seokjin&apos;s store, he thought the only thing he would find was how to make his other branches more profitable.</p>
+<p>He didn&apos;t think he&apos;d find more.</p>
+<p>But he did.</p>
+<p>In a kind, wide eyed, hard working omega.</p>
+<p>Who rejected him.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>30k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>its just so cute and fluffy</i>
+<i>kook needs the biggest hug and he gets his tae</i>
+<i>protective tae and soft kook</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" complete ao3 exp angst mafia fluff"> 
+
+<h1>criminal</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/23780908">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>The florist!taehyung and mafia boss!jungkook fic no one asked for.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>74k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>typical mafia fic with stalking and kidnapping</i>
+<i>but its really interesting and fun to read</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst fluff mpreg abo college enemies"> 
+
+<h1>take it, keep it</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/24962578">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Impregnating Taehyung was the best thing to happen to Jungkook, too bad it took him months to realise it.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>62k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>loved the growth of their characters</i>
+<i>you see them slowly navigating through parenthood and just being there for each other</i>
+<i>kook's friends are the best!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst abo college"> 
+
+<h1>moon child</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22581790">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Hoseok convinces Jungkook to find an omega to help with his rut. What Jungkook doesn&apos;t expect is to meet the most beautiful omega he&apos;s ever laid eyes on. After their one-night stand, the young alpha is determined to win him over as his mate.<br>The only problem?<br>Taehyung isn&apos;t interested.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>89k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>read the tags cause it has rape elements</i>
+<i>its actually a very different story and quite interesting</i>
+<i>yoongi has my heart in this one</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp fluff abo enemies soul mpreg"> 
+
+<h1>sunshine and wispy lavender and white sand and my favorite book</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/24412441">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Kim Taehyung was already in love with an alpha from his pack. Jeon Jungkook had a lot to prove to his pack after becoming Head Alpha. Neither of them could have imagined that the Jeon pack visiting the Kim pack for a weekend would lead to… This.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>144k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>idk how i read it, it barely has any angst</i>
+<i>but a wholesome story of falling in love with time</i>
+<i>also they adopt a lil pup and have one of their own...so yes very wholesome</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst mafia enemies"> 
+
+<h1>his darkest desire</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30181233">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung&apos;s long term trauma has never ceased to an end when his parents had both died in tragedy. Constantly hidden from the world,Taehyung doesn&apos;t know much about the dangers, can&apos;t come into terms to love himself, but then he falls into a dark situation. One where he finds himself kidnapped and falling into the trap of a Mafia.</p>
+<p>&quot;And what&apos;s your name?&quot;</p>
+<p>&quot;Nothing that concerns you.&quot;</p>
+<p>&quot;Feisty I like it. Jimin..where did you find this smart mouth?&quot;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>84k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>a chaotic mafia fic</i>
+<i>almost everyone has a dark past</i>
+<i>interesting plot</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 non fluff abo"> 
+
+<h1>honeysuckle among the grasses </h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/15083702">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Kim Taehyung loved being an omega.</p>
+<p>Scratch that.</p>
+<p>He loved being an omega when he wasn&rsquo;t surrounded by asshole alphas. And therein lay the problem.</p>
+<p>When change strikes his life, leads him to a new pack, a new family, Jeon Jungkook is given the chance to change Taehyung&apos;s mind about alphas.</p>
+<p>Will he?</p>
+
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>21k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>ot7 fam is the best thing</i>
+<i>the innocent love between tae and kook melts my heart</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete ao3 exp angst fluff college soul"> 
+
+<h1>black versus blue</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/14805297">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung had always dreaded meeting his soulmate, unlike the rest of the world&rsquo;s population. He always hid the words scrawled in black cursive on the inside of his right wrist and felt terror at the thought of them turning blue, of his soulmate speaking them.</p>
+<p>And as he sprinted down the packed Seoul sidewalk, hot tears streaming down his cheeks and sobs choking his throat, he knew he&apos;d been right.</p>
+<p>Or was he?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>41k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>its actually pretty simple with no drama but at the same time so cute and beautiful</i>
+<i>love the way it has been written</i>
+<i>the urge to hug the characters is so strong throughout</i>
+<i>the first thing kook says when he sees tae is "pretty"</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst fwb enemies ceo work"> 
+
+<h1>unwanted butterflies</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/9255236">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jungkook and Taehyung hate each other. Except, of course, when they're having sex.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>101k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>they both are oblivious</i>
+<i>my frustration levels were rising throughout</i>
+<i>but...its very hot and cute and painful and interesting...</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete ao3 exp angst fluff enemies ceo work"> 
+
+<h1>what's wrong with my boss?</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/26678362">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+They met in a haphazard circumstances, where it was impossible for them to be gentle with each other, they became each other's worst enemies but as an old proverb says 'love will find its own way'.... These two crack-heads will eventually fall in love - just have to wait for the right moment.
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>123k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i loved this one so much</i>
+<i>they fight, fall in love, get separated, unite</i>
+<i>some specific parts are too good like the trip to grandma, the separation, the truht...</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst fluff abo soul mpreg"> 
+
+<h1>infinity</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/21500008">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jeon Jungkook is a True Blood. But only he knows this, no one else. He is a ruthless monster in a fight and you would not want to make him angry. Due to a past event, his belief on Love and mates completely changed. Now he does not want a mate because he thinks its bullshit. He promised to reject his mate if he found one.</p>
+<p>Kim Taehyung is an Omega and the most beautiful one to be exact and a most rare specie. His friend Jimin only knows the secret and it better be kept a secret. He knows nothing about his parents. Adopted by Jimin&apos;s father. All he needs is Love and safety from his mate.</p>
+<p>&quot;I don&apos;t want him as my mate.&quot;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>102k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>if you have nimra's works you know how it is</i>
+<i>like a movie, has angst fluff fights celebrations etc.</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class=" fave complete ao3 exp angst mpreg abo parent"> 
+
+<h1>nothing without you</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22208647">ao3</a>
+
+<div class="d"> <!--start description--> 
+All the time, Kim Taehyung hated his life, hated being an omega and being treated like a puppet, controlled by the immoral pack where he has been thrown. But it all changed, when Jeon Jeongguk entered his life and saved him.
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>86k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>its just so cute, i love how tae calls his baby "beautiful"</i>
+<i>and the pup is just so adorablee</i>
+<i>kook becomes their safe place</i>
+<i>also the end was so beautiful, overall very wholesome</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst fluff str abo soul"> 
+
+<h1>can you guide me through the storm?</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/29251995">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+After Taehyung runs away from his abusive parents, he comes across a strange camping site at the edge of the forest. Little did he know that the ‘Jeon’ pack know more about him than they should.
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>123k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>so basically tae is lost and kook becomes his home</i>
+<i>protective kook with cute tae</i>
+<i>a lil different story</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst mafia soul"> 
+
+<h1>zero o'clock warfare</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22690660">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>For the first time, Jeon Jungkook kneels, his legs buckled. Not because he lost, no. It is because he&apos;s face to face with his soulmate, his only destiny that he thought he&apos;ll never meet considering all of the grotesque things he had done in his life. He thought he&apos;ll die at forty or some shit that the society engraved to them, he didn&apos;t really believe it. Now, upon seeing the beautiful man in front of him, he wants to continue living.</p>
+<p>He wants to be with Taehyung forever.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>96k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>dark fic with fucked up characters</i>
+<i>kook is only good to tae and he will do anything to keep him safe</i>
+<i>the plot twists are great and the characters have a lot of ayers</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 exp angst abo mafia parent fwb fluff mpreg"> 
+
+<h1>perhaps love</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/28262223">ao3</a> 
+
+<div class="d"> <!--start description--> 
+
+<p>When his first heat came, omega tae was in the cinema. An unknown alpha came to help by having sex with him.&nbsp;</p>
+<p>Years later, they both meet again in unexpected circumstances but this time, under the watching eyes of their son Jae.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>30k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>kook is really hot in this one</i>
+<i>i really enjoyed reading this one</i>
+<i>the make such a cute lil family i wanna cry</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic--> 
+
+<!--example fic--> 
+<article class="complete ao3 exp angst abo str parent mpreg fluff"> 
+
+<h1>how to be a good neighbour</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/29842803">ao3</a> 
+
+<div class="d"> <!--start description--> 
+
+Taehyung finds himself doting on his new neighbor's little kid. The only issue is that her alpha dad is a bit of a dick. 
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>42k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>ahh it has such a sweet plot</i>
+<i>they both have issues but get over it together and become the cutest sweetest couple ever</i>
+<i>the end is sooo domestic, it melts my heart</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic--> 
+
+<!--example fic--> 
+<article class="fave complete ao3 exp fluff str ceo"> 
+
+<h1>(before you) i thought i had it all</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22826320">ao3</a> 
+
+<div class="d"> <!--start description--> 
+<p>Jeon Jungkook has it all. The business, the money, the power. Anyone he meets falls to their knees for him, but it&apos;s not like he gives a shit. That is, until a certain silver haired boy crashes into his life. Maybe he doesn&apos;t have it all. . . yet.</p>
+<p>&quot;Sweetheart you really need to quit dropping things,&quot; Jungkook says with a glint in his eye as he hands the pen back to the boy, loving the little blush that spreads across the other&apos;s face.</p>
+<p>&quot;Um yeah. . . my name is Taehyung, I&apos;ll be your server this evening, what can I get for you?&quot;</p>
+<p>Fuck.</p>
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>102k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>if you like sugar baby fics this is THE fic for you</i>
+<i>it has everything and is just so beautifully written</i>
+<i>happy ending like these make my heart warm</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic--> 
+
+<!--example fic--> 
+<article class="complete ao3 exp angst abo ceo marr fluff mpreg"> 
+
+<h1>for me, there is only you</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30409890">ao3</a> 
+
+<div class="d"> <!--start description--> 
+<p>&quot;for me, there is only you, kim taehyung.&quot;</p>
+<p>omega kim taehyung participates in an old tradition of finding a mate, the raffle, and gets paired with alpha jeon jungkook.</p>
+<p>their lives intertwine from a wild chance of fate</p>
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>73k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>what a wonderful story</i>
+<i>its so wholesome and they both are so in love</i>
+<i>i liked the first part more tho</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete ao3 exp angst fluff ceo"> 
+
+<h1>blind me or bind me</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/8921911">ao3</a> 
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung is just looking for something to fill the empty void in his heart and Jungkook only has money to offer.&nbsp;</p>
+<p>&quot;This isn&apos;t a place where people fall in love&quot;&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>51k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>oh i had forgotten about this one</i>
+<i>but it was so good and interesting!!</i>
+<i>love doesnt always have to be about "i love yous", thoroughly enjoyed reading this one</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic--> 
+
+<!--end example fic--> 
+<article class="fave complete ao3 exp angst abo ceo fwb marr enemies fluff mpreg"> 
+
+<h1>we, our families and a baby</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/15640302">ao3</a> 
+
+<div class="d"> <!--start description--> 
+<p>&quot;A-and who&apos;s the father?&quot; the brunette asked with a trembling voice. The best friend of the blond gave him a nervous smile while moving his hands from side to side.</p>
+<p>&quot;By any chance... Do you know how to change diapers Jeon?&quot;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>55k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>just look at the summary how can you not have the urge to read it</i>
+<i>they are THE power couple </i>
+<i>the way kook is protective over tae and the way tae adores kook, i feel single</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic--> 
+
+<!--example fic--> 
+<article class="complete ao3 exp fluff uncat hist"> 
+
+<h1>carthage must be destroyed</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/8544895">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>Jeongguk is the son of one of Rome&apos;s most important men, a respected centurion in his own right. But he finds himself weakened in the face of one gorgeous, golden-skinned slave boy from the far east.</p>
+<p>Taehyung just wants to return home, but he has begun to accept his new life in Rome, partly due to a kind domina who was from his homeland. Now, he has her son to answer to.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>20k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i loved how different and wonderful the plot was</i>
+<i>their dynamics is this was just so...</i>
+<i>ot7 has my heart! author has done a beautiful job with this one</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 non angst fluff ceo enemies parent work fake"> 
+
+<h1>memory loss</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/23451817">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>where assistant Taehyung is sick and tired of the way his boss Jungkook treats him. When Jungkook gets in a car accident and loses all of his memory Taehyung decides to get back at him for the years of torture. &ldquo;Who are you?&rdquo; &ldquo;I&rsquo;m your husband.&rdquo;&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>24k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>a fun read, has got a good plot</i>
+<i>there are times when you are like 'what?' but then you go 'oh cute'</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete ao3 exp angst abo parent fwb mpreg fluff cried"> 
+
+<h1>starlight & sunshine</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/20668508">book 1</a>, 
+<a href="https://archiveofourown.org/works/22965292">book 2</a>
+
+<div class="d"> <!--start description--> 
+<p>Idol Omega Taehyung left the spotlight because he accidentally got pregnant by Alpha Jeon Jungkook who refused to take responsibility of him.</p>
+<p>Five years later, Jungkook leared that he couldn&apos;t get his inheritance from his deceased father if he couldn&apos;t find his own son.</p>
+<p>&quot;He&apos;s definitely my sona dn I want to be a part of his life too!&quot;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>124k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>this author susks at summaries T-T the story is nothing like that</i>
+<i>its just so wholesome and has so much depth to it, they truly love each other</i>
+<i>my heart was just so happy while reading this and the pain was sooo good! loved every part of the book so pls read it</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete ao3 exp angst enemies ceo college friends soul"> 
+
+<h1>moon chasing the star book 1 & 2</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/24166120">book 1</a>, 
+<a href="https://archiveofourown.org/works/24215761">book 2</a>
+
+<div class="d"> <!--start description--> 
+<p>Freshmen Taehyung fortunately got a scholarship in Seoul University where senior Jungkook &amp; his friends are treated as royalty. Clich&eacute; au where rich Jungkook meets extraordinary poor Taehyung.</p>
+<p>They&apos;re enemies until fate decided to intertwine their souls.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>236k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>same author, bad at summaries but great plots</i>
+<i>lots of WTF moments but still very interesting and keeps you invested throughout</i>
+<i>babies really are soulmates and despite everything they go through nothing can break them apart..</i>
+<i>taegi in this!! he calls him tiger T-T</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave uncat parent cried fluff complete ao3 exp angst post"> 
+
+<h1>still with you</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/25463527">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>Taehyung is desperate, he needs to find a surgeon who can help his son&apos;s condition &amp; he found one.</p>
+<p>Problem is, Dr. Jeon was his ex and Taco&apos;s mom is the reason of their break up.</p>
+<p>Would he really help them?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>143k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i am not kidding when i say that i was broken and melting at the same time</i>
+<i>what a lovely story, the characters are so beautifully created and tae is the strongest, also taco has my whole heart!</i>
+<i>their love for each other is so deep, its beautiful to watch it unfold throughout</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete ao3 exp angst tear abo ceo college fake"> 
+
+<h1>as long as we're together</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30186042">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>Jungkook&rsquo;s and Taehyung&rsquo;s worlds collide when Taehyung&rsquo;s parents choose a fitting husband for him, desperate for keeping his freedom he asks the campus bad boy for a little help, he needs him to act as his fake boyfriend in front of them to make them change their minds. He never thought a rushed plan would lead him to the best time of his life. Much less discovering what real love feels like. If they only manage to survive their chaotic lives, maybe they&rsquo;ll find the happiness they desire so much in each other.&nbsp;</p>
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>89k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>ahh this was so beautiful</i>
+<i>just the way they are there for each other, fighting through hell</i>
+<i>really lovely plot with great characters and growth!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete ao3 exp angst mafia enemies"> 
+
+<h1>meant to be</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30799292">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>When Kim Taehyung&apos;s parents suddenly leave, as if they disappeared, he is left with nothing but a house which he needs to pay rent for.</p>
+<p>Now, he needs money and a job and he needs it as soon as possible. His best friend Kim Seokjin recommends him a job---a job to be ruthless Mafia boss, Jeon Jeongguk&apos;s maid.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>150k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i loved this one so much, pretty wholesome for a mafia fic</i>
+<i>jungkook truly and deeply falls for tae and its just wonderful to watch</i>
+<i>this pair is made for each other</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete ao3 non angst abo marr est enemies soul college fluff mpreg"> 
+
+<h1>crowned troubles</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/23361157">ao3</a> 
+
+<div class="d"> <!--start description--> 
+<p>Jeongguk&apos;s life rotated off of its axis when he turns eight without much of a warning.</p>
+<p>In comes Taehyung in his life.</p>
+<p>However, when Jeongguk decides to let go of his heart, Taehyung decides he wants no part in catching it.</p>
+<p>Or a fic where Jeon Jeongguk ends up having his arch nemesis as his fated mated while Taehyung is stuck in the endless loop of being in love with his mate. One pines, the other hates.</p>
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>63k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>the writing style is a lil different so i enjoyed it alot</i>
+<i>the whole process of them falling in love</i>
+<i>its just too cute at times!</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic--> 
+
+<!--example fic--> 
+<article class="complete ao3 ao3 non angst friends college parent unreq fluff mpreg"> 
+
+<h1>love, taehyung</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/9533273">ao3</a> 
+
+<div class="d"> <!--start description--> 
+<p>take a deep breathe<br>and start at the beginning</p>
+<p>tell them how we first met<br>tell them how we shared our dreams<br>even your weirdest ones</p>
+<p>no, keep that as our secret</p>
+<p>tell them that this is<br>that this has to be<br>one of the happiest days<br>of your life.</p>
+<p>OR the one where Taehyung and Jeongguk just keep missing each other</p>
+
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>51k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>my frustation levels throughout were too high</i>
+<i>the summary says it all, the kept fucking missing each other everytime?!?!</i>
+<i>but...a very well written story, almost poetic and alot more than a simple love story, it have many layers to it</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic--> 
+
+<!--example fic--> 
+<article class="fave complete ao3 exp angst abo fwb work ceo parent unreq mpreg fluff"> 
+
+<h1>alpha, i think i'm pregnant</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/27622196">ao3</a> 
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung is a stylist at Big Hit.</p>
+<p>Jungkook is a Billboard No. 1 Singer.</p>
+<p>After some bad decisions and a lot of denial, a tiny seed has sprouted &mdash; and it definitely looks like a baby bunny.</p>
+<p>Jungkook is not ready for it at all.</p>
+
+<!--end description--> </div> 
+
+<span>explicit</span> <!--age rating box--> 
+<span>41k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>dont judge me but i really enjoyed this</i>
+<i>a simple and light story where you just enjoy the whole journey </i>
+<i>baby and koo are the most adorable duo and i wont shut up</i> 
+
+<!--end tags--> </div> 
+</article> 
+
+
+<!--example fic--> 
+<article class="complete ao3 ao3 exp angst fluff abo ceo enemies work mpreg"> 
+
+<h1>in the woods</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30126141">ao3</a> 
+
+<div class="d"> <!--start description--> 
+
+<p>The CEO of Jeon fashion is ruffling his hair because of his secretary again, he would love to fire him already but nobody dares to take his job.</p>
+<p>Both know they can&apos;t stand each other, bickering all the time but the omega does his job good so he keeps him.&nbsp;</p>
+<p>Then once their workers are all send into a business trip to heal and relax in the woods for the upcoming fashion week</p>
+<p>Jungkook knew that they would get in trouble for being on their throats 24/7 but what he didn&apos;t see coming was what happened when it&apos;s getting dark and Taehyung is sneaking into the forest and he follows him silently.&nbsp;</p>
+<p>Their relationship changes in this night forever.&nbsp;</p>
+
+<!--end description--> </div> 
+<span>explicit</span> <!--age rating box--> 
+<span>34k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>well everyone hates their boss so...</i>
+<i>its actualky a very sweet and fluffy fic</i>
+<i>nothing beats whipped kook</i> 
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic--> 
+
+<!--example fic--> 
+<article class="fave cried complete non angst fwb friends unreq twt"> 
+
+<h1>be my mistake</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/amyungv/status/1463825291298553863">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>&quot;What are we?&quot; Taehyung whispers, eyes not really focused, arms around Jungkook&apos;s shoulders, &quot;Jungkook... what are you?&quot;&nbsp;</p>
+<p>Jungkook&apos;s heart breaks, his arms tighten around Taehyung, &quot;a mistake. I am a mistake.&quot;&nbsp;</p>
+<p>Taehyung smiles...</p>
+<!--end description--> </div> 
+
+<span>medium</span> <!--age rating box--> 
+<span>amyungv</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>type of au that makes my mind go "my heart's already breaking baby go on twist the knife..."</i>
+<i>what a lovely story and wow the way it is written leaves me speechless</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete non angst fluff soul college enemies friends twt"> 
+
+<h1>ludus</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/flmvantes/status/1380887590664998912?s=21">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>Every time you come in contact with your soulmate&rsquo;s lips, either a kiss or a touch, a red string will start to form in your pinky finger until it connects to your soulmate.&nbsp;</p>
+<p>Enemies Jeon and Kim kissed on a drunken night and neither of them remember.&nbsp;</p>
+<!--end description--> </div> 
+
+<span>long</span> <!--age rating box--> 
+<span>flmvantes</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>damn one of my fav, i had so much fun reading this!</i>
+<i>its just so interesting and well written</i>
+<i>tae and kook are the cutest and i would do anything to protect them</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete non angst fluff uncat twt fluff"> 
+
+<h1>sleepless in seoul</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/jkkittae/status/1415651855414169601">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>After realising that Jungkook has not come to terms with his wife&rsquo;s death, his daughter Sana decides to call a radio talk show in hopes to find him a companion. &nbsp;</p>
+<p>Thankfully, Taehyung was listening.</p>
+<p>Or a taekook au based on Sleepless in Seattle where Taehyung and Jungkook fall in love over shared stories, misunderstandings, radio shows and sleeplessness.&nbsp;</p>
+<!--end description--> </div> 
+
+<span>long</span> <!--age rating box--> 
+<span>jkkittae</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i just couldnt get enough of this, i remember waiting every alt day for updates</i>
+<i>its just so soft and sweet, i could die cause of the amount of softness it has</i>
+<i>full of pure, innocent and deep love. and sana is the best!!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp fluff abo hist marr twt"> 
+
+<h1>mating ball</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/sultrykookv/status/1507338506233794562">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>The Mating ball is held in Seoul every spring, a chance for single wolves to find a mate. &nbsp;Taehyung ,an orphaned wolf from the Daegu pack, somehow catches the eye of the Busan pack&apos;s head alpha. &nbsp;</p>
+<p>The catch is, Jungkook is already betrothed to someone else.&nbsp;</p>
+<!--end description--> </div> 
+
+<span>medium</span> <!--age rating box--> 
+<span>sutrykookv</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i wanna just go and hug tae and tell him what a lovely person he is and deserves so much</i>
+<i>thankfully kook does that for me :)</i>
+<i>one of the sweetest plots i have read and kook's character!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete non angst fluff college friends twt"> 
+
+<h1>baseball</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/Yooniversee_/status/1376560123137691651">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>Where star baseball player, Kim Taehyung, swears he&rsquo;s not gay. &nbsp;</p>
+<p>But that&rsquo;s hard to believe when Jungkook, the guy he&rsquo;s been secretly flirting with online for months, transfers to his university.&nbsp;</p>
+<!--end description--> </div> 
+
+<span>long</span> <!--age rating box--> 
+<span>yooniverse</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>THIS.. this was my first ever twt fic i read</i>
+<i>i am not kidding when i say that i was hooked</i>
+<i>its just so interesting and you just cant stop reading, i lovee how they finally get together </i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst hist friends uncat twt"> 
+
+<h1>the king's mask</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/yunayuki16/status/1263874028072169472">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>Where Kim Taehyung is a scholar who loves to sneak out and admire the stars at night, his life has been peaceful and somewhat fun until he accidentally saw something he shouldn&apos;t have&hellip;</p>
+<p>something that proves the rumor surrounding their kingdom.. the rumor that proves the murders of the blood thirsty king who wears a mask.</p>
+<p>No one has ever seen the face of the sanguineous king, the blood thirsty one, the powerful monster that rules Goguryeo. It was said that he kills for fun and some says that you&apos;ll see hell just by meeting his eyes..&nbsp;</p>
+<!--end description--> </div> 
+
+<span>long</span> <!--age rating box--> 
+<span>yunayuki16</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>well every single fic my her leaves me speechless and this is one of them</i>
+<i>its like a damn movie, has everything from angst to fluff to comfort</i>
+<i>i will never stop talking about how unique and wonderful her plots are and they are always so different and unique!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp fluff college est uncat twt"> 
+
+<h1>him and i</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/AmsKooVee/status/1553325900657094657">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>Others would say they were strange too&hellip; &nbsp;</p>
+<p>So unfathomable was it that society darling ,Taehyung, could possibly fall for the obstreperous boy who was rarely seen without bloody knuckles and busted flesh.&nbsp;</p>
+<p>The mere thought that the delicate danseur allowed the touch of rugged hands stained with pain and brutality was downright scandalous, a mystery &ndash; impossible.&nbsp;</p>
+<p>So strange is their love, so unbreakable.</p>
+<p>Until now. &nbsp;</p>
+<p>For how many times can you be called a callous monster without starting to believe it?&nbsp;</p>
+<!--end description--> </div> 
+
+<span>short</span> <!--age rating box--> 
+<span>AmsKooVee</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>speechless..yes this au left me speechless</i>
+<i>the way it is written, their characters, the whole build up..its all so beautifully plotted</i>
+<i>my heart was happy while reading this</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst fluff fwb college unreq ao3"> 
+
+<h1>first touch my body (then my heart)</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/23078395">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p><em><em style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&ldquo;</em>Let&rsquo;s end this,&rdquo; Taehyung says, his face impassive, voice emotionless.</em></p>
+<p><em>Jeongguk turns around. &ldquo;What?&rdquo;</em></p>
+<p><em>Taehyung takes a deep breath, ignores the painful clench of his heart in his chest. &ldquo;I said let&rsquo;s end this. Let&rsquo;s stop sleeping together. Let&rsquo;s stop fucking.&rdquo;</em></p>
+<p><em>&ldquo;Why?&rdquo;</em></p>
+<p><em>Jeongguk has the fucking audacity to ask that after stomping all over Taehyung&rsquo;s heart, shattering it in a million pieces.</em></p>
+<p><em>&ldquo;Because,&rdquo; Taehyung starts, his voice cracking, &ldquo;I want something real and this,&rdquo; he gestures between Jeongguk and himself, &ldquo;is far from it.&rdquo;</em></p>
+<p>Or alternatively, Taehyung catches feelings and Jeongguk doesn&apos;t.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>38k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>ooooh the drama in this one</i>
+<i>very interesting and hot</i>
+<i>the kind of fic where you are like "come on just make out already"</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst fluff fwb college ao3"> 
+
+<h1>taint me</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/28429725">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Everyone in the cafeteria had just witnessed University Sweetheart Jungkook tie Kim Taehyung&apos;s hair.&nbsp;</p>
+<p>&quot;Do you realize what you&apos;ve done?&quot; Taehyung almost whispered, voice shaky as moist eyes looked up at Jungkook.</p>
+<p>Jungkook smiled, &quot;I do,&quot; and a tear escaped Taehyung&apos;s eye.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>23k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>this was one of the cutest, aoftest and loveliest fic i have read</i>
+<i>you have this strong urge to hug both of them and glare at every asshole around</i>
+<i>absolutely love how protective kook is and when tae shows him the paintings!!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst fluff fwb college friends ao3"> 
+
+<h1>make you mine (i can fuck you better)</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/21875101">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>It&apos;s one of life&apos;s greatest moral quandaries&mdash;If your roommate is the Most Gorgeous Boy You&apos;ve Ever Seen in Your Entire Life and said Gorgeous Roommate already has a boyfriend, should you try and seduce him anyways? Well, if you&apos;re Jeon Jungkook and the roommate in question is Kim Taehyung, the answer is...FUCK YES.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>64k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>the title does justice to the story</i>
+<i>its just so fucking hot and also cute</i>
+<i>the chemistry is too good and it is very well written</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst abo marr est work fluff fake mpreg ao3"> 
+
+<h1>alpha's little gifts</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/31131623">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jungkook and Taehyung is a married couple who works as professors at the same university and they decided to keep their marriage life a secret. But that become difficult when Taehyung got pregnant.</p>
+<p>Or,</p>
+<p>Taehyung and Jungkook journey as a married couple, going through the ups and downs.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>25k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>pure fluff like that the only way i can explain</i>
+<i>even the light angst is wrapped in fluff</i>
+<i>also i love how protective kook is, it makes my heart jump</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst fluff mpreg abo ceo marr friends"> 
+
+<h1>bound to happen</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30284352">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Nothing is like before as a new law was passed, which says that Omegas at the age of 22 are obliged to look for a mating partner. Should it not be possible for any reason, the Omega will be sold at an auction to an Alpha or Beta.</p>
+<p>Taehyung is anything but happy about it and doesn&apos;t give up fighting for his rights. There is a new opportunity that he takes. A journey of past memories, present and future decisions begins.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>46k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>the plot takes many interesting turns</i>
+<i>was nothing like i imagined it to be like so i enjoyed it alot</i>
+<i>the end is so soft i could cry</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst abo ceo est ao3 fluff"> 
+
+<h1>if it makes you happy</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/28933860">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>The nation was in uproar a few months ago when it was revealed that Jungkook, one of the most popular idols in k-pop, was dating Taehyung, a model, and a male omega four years his senior. It didn&rsquo;t help that Taehyung&rsquo;s reputation wasn&rsquo;t the best (to say the least).</p>
+<p>Some say it&apos;s a love story, some say it&apos;s a publicity stunt, and some even say that Taehyung is merely using the young idol&apos;s fame.</p>
+<p>What is the truth? Well, even Taehyung is not so sure.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>37k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>this was so soft and beautifully painful, i just wanna protect tae</i>
+<i>very well written and thefre is this part where kook tells tae "i dont want you to be right for me, i just want you" it melts my heart</i>
+<i> tae calls him puppyy!!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp fluff abo ceo work ao3"> 
+
+<h1>unapologetic</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30430443">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung is an omega &mdash; and Korea&rsquo;s most popular idol, adored by millions for his delicate features and coy smiles, appearing as a mindless, giggling doll.</p>
+<p>Unbeknownst to these judgemental fools, Taehyung is also Cypher&rsquo;s most competent hired assassin. Which is fine, really. Totally manageable&mdash;</p>
+<p>But how is he supposed to explain the lifeless body underneath him to his new personal bodyguard?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>21k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>badass tae with protective kook...</i>
+<i>fun plot where you just go with the flow and enjoy it</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete non angst fluff ao3 college friends unreq"> 
+
+<h1>accidently? maybe </h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/32680240">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>Taehyung developed this habit of calling his best friend &apos;baby&apos; for some reason. Jungkook absolutely hates it. He doesn&apos;t like being called cute names in general.</p>
+<p>But what happens when Taehyung starts calling someone else &apos;his baby.&apos;</p>
+
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>13k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>the fic is full of jealous kook</i>
+<i>but he is the dumbass here</i>
+<i>its a simple story which is so beautifully written, enjoyed it alot</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst fan hist uncat twt"> 
+
+<h1>gaksi dokkaebi</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/yunayuki16/status/1231225074889326593">twitter</a>
+
+<div class="d"> <!--start description--> 
+
+<p>in a world where supernatural exists, creatures like angels, demons, ghosts, vampires and the likes are lurking all over the human realm&hellip; one of them is considered as the most feared one&hellip;</p>
+<p>someone who was said to have commited such a grave sin that the heavens did not only stripped him off of his past memories, but also stripped him off his soul making him unable to taste death as much as he wanted to&hellip;</p>
+<p>and as if his punishment wasn&apos;t enough he was also bestowed with the only curse of it&apos;s kind&hellip;symbolizing his sin&hellip; making it known to others that he&apos;s one to be feared&hellip; the one who&apos;s said to posses the great onyx wings&hellip; &nbsp;</p>
+<p>they call him&hellip; Gaksi Dokkaebi</p>
+
+<!--end description--> </div> 
+
+
+<span>long</span> <!--age rating box--> 
+<span>yunayuki16</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>masterpiece..yes thats what this is!!</i>
+<i>i has read it in one sitting, around 1am</i>
+<i>keeps you on the edge, the 2nd book breaks your heart and my god the way it has been written...</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave twt complete non angst mpreg fluff abo post parent"> 
+
+<h1>dreams and efforts</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/sultrykookv/status/1498208006177116160">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>The last thing Alpha Jungkook expects when he answers his door, is his ex mate, Taehyung, with a baby in his arms. &nbsp;</p>
+<p>Especially when the omega left him six years ago without telling him why. &nbsp;</p>
+<p>&quot; I need help.&quot;&nbsp;</p>
+<p>Jungkook has always been weak for those eyes.&nbsp;</p>
+
+<!--end description--> </div> 
+
+<span>long</span> <!--age rating box--> 
+<span>sultrykookv</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>pls i love this one from the bottom of my heart</i>
+<i>the main confrontation and confession part is just so beautifully written</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 complete exp angst abo marr hist mpreg fluff"> 
+
+<h1>moonlight before dawn</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/28198509">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jungkook was a gifted child by Moon Goddess. He always lived with a small tribal pack in a dense forest, until one day when he found out the beta woman he used to call his mother wasn&apos;t his real mother and his parents, who were the king and queen of their nation, were brutally killed by the current king Kim Taejoo.</p>
+<p>Jungkook entered the palace in disguise to kill Taejoo&apos;s whole family. When a series of circumstances brought him and the young prince Taehyung closer, it became harder for him to stick with his revenge mission.</p>
+<p>But how long can he keep up the enigma and hide his true identity?&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>145k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>a royalty drama</i>
+<i>pretty dramatic but fun</i>
+<i>the plot just keeps taking different turns</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 twt fave complete exp angst cried fwb enemies fake college unreq"> 
+
+<h1>proxies</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/35745436">ao3</a>,
+<a href="https://twitter.com/yunayuki16/status/1398745630466469889">twitter</a>
+
+<div class="d"> <!--start description--> 
+<p>Where in everyone&apos;s eyes, Kim Taehyung and Jeon Jeongguk are the perfect couple. But the truth is &mdash;they&apos;re not. They just happened to share the same unfortunate fate of falling in love with someone who already belongs to someone else.</p>
+<p>Taehyung has been in love with the same guy for as long as he could remember. The problem is, he&apos;s 15 years older, not to mention that he&apos;s his professor who&apos;s also already engaged with someone else; while Jeongguk?&mdash;Well, he&apos;s in love with the fianc&eacute;.</p>
+
+<!--end description--> </div> 
+
+
+<span>yunayuki</span> <!--age rating box--> 
+<span>44k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>fuck what a plot this has!!</i>
+<i>its my first fic by yuna that i had read when ongoing, the thrill of waiting for updates and all</i>
+<i>AMAZING PLOT, GREAT CHARACTERS, THE EMOTIONS...DAMN its just WOW</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 fave complete exp angst fluff cried friends enemies college post abo rich"> 
+
+<h1>iterum</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/34797913">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>They drifted apart on a rough note. When they met again, they both are scarred from the past, but Jungkook can&apos;t stay away from Taehyung and Taehyung can&apos;t deny the attraction either.<br>.<br>&quot;You are like a moth to my flames. We are not meant to be, but we can&apos;t seem to stay away from each other.&quot;&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>24k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>one thing abt amy is that even the simplest things are so beautifully written</i>
+<i>the fic is so angsty and at the same time HOT</i>
+<i>there are few parts that i loved so much where the characters would show such deep emotions</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 complete exp angst abo ceo est college friends post parent fluff mpreg"> 
+
+<h1>love me now, hate me soon</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/35220199">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>University IT Couple Alpha Jeon Jungkook and Omega Kim Taehyung were the epitome of an ideal pair. They were very in love with each other you can smell it in their scents. Most students wished to experience what they have. Everyone was convinced that they will end up mating with each other and will build the perfect family in the future.</p>
+<p>Not until one day, the perfect omega disappears turning the once sweet alpha into an overbearing beast. Would the return of the omega soften the alpha or would he make it worse if all secrets will be revealed?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>37k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>it goes from sweet to ouch to aww</i>
+<i>an interesting yet simple ride</i>
+<i>its like a cute lil familt drama</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 complete exp angst cried abo soul friends work post parent college mpreg"> 
+
+<h1>red string, tattoos and promises</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/31649375">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>For two and a half years, it has always been the twins, Jimin and Taehyung until they were introduced to little Jungkook. The twins immediately got attached to Jungkook, creating the inseparable trio and it was all unicorn and rainbows but like any other things in life, it started to change with time.<br><br>One of the trio died, leaving the other two in a very dark place that later become the reason that drifted them apart like never before.<br><br>They started to question the love between them, started to point fingers amongst themselves, straining their once strong and unbreakable bond. But they always come back to each other no matter how bad it gets.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>83k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>few parts broke my heart T-T</i>
+<i>but its a reallyyy sweet fic writen so beautifully</i>
+<i>you just like go with the flow and experience so much through the whole process</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 twt fave complete exp angst mafia fwb enemies college uncat"> 
+
+<h1>sophism</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/29514093">ao3</a>,
+<a href="https://twitter.com/yunayuki16/status/1361280241642008576">twitter</a>
+
+
+<div class="d"> <!--start description--> 
+
+<p>Senior transfer student Jeon Jeongguk, got framed for a crime he didn&apos;t commit. Now he has 3 months to prove his innocence by uncovering the truth inside the web of lies and betrayal within Acadia.</p>
+<p>School for the future Cosa Nostra&mdash; The Mafia.</p>
+
+<!--end description--> </div> 
+
+
+<span>yunayuki16</span> <!--age rating box--> 
+<span>126k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>if you know me you know my love for her works</i>
+<i>THIS FIC WAS INSANEE like omggg the plot and the plot twists</i>
+<i>they are a hot power couple where both are a lil crazy but heyy who cares</i>
+<i>i read it on twt, its fun with all the visuals</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 complete exp angst mpreg fluff abo fwb ceo"> 
+
+<h1>knocked up</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/33762295">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>No strings attached. The arrangement has been perfect for alpha Jeongguk, a successful lawyer fooling around before he&rsquo;s bound for his upcoming arranged marriage, and omega Taehyung, a career-focused, independent office worker. Until it&rsquo;s not. Taehyung accidentally gets knocked up and Jeongguk&rsquo;s hands are suddenly tied. Now they have to find their way to each other again, against all odds.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>41k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>there's a bitch in this fic that messes things up, the urge to slap her...</i>
+<i>the way their dynamics and characters are introduced is hot</i>
+<i>i wish we had gotten an epilogue :( i wanna know how they are</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="ao3 complete exp angst fluff enemies ceo post"> 
+
+<h1>wedding planner</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/31764433">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung is a wedding planner, who ends up planning his ex-boyfriend, Namjoon&rsquo;s wedding, hoping to get him back and stop the wedding. What happens if he ends up falling for the best man/best friend of Namjoon, Jungkook, who has a reputation of being a playboy? </p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>74k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>a simple fic with beautifully written characters</i>
+<i>everyone has different layers and it fun to explore it as the story goes on</i>
+<i>the confession is the sweetes</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst abo ceo college work soul ao3 "> 
+
+<h1>one sees clearly only with the heart</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/27597197">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung had always been trusting, so when his friends told him to stay away from the notorious Jeon Jungkook, he listened. They were just looking out for him, right? When they told him to reject him, he did. After all, they wouldn&apos;t tell him to do that for no reason, would they?</p>
+<p>However, when he meets the very alpha he rejected years later, it turns out that his &apos;friends&apos; perhaps had their own interests in mind back then.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>21k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>different plot as the alpha is the one who was rejected</i>
+<i>i just wanna hug kook in this</i>
+<i>cute ending!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst fluff enemies ceo soul fan ao3" > 
+
+<h1>golden</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30968378">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>After Fairy Taehyung&apos;s grandma dies, he&apos;s left poor, alone, and on the streets. The rich, Wizard Jeon family eventually takes him in. Spoiled brat Jungkook lets it known that he hates the idea but he soon finds there&apos;s more to Tae than meets the eye.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>93k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>if in mood for a light magical fic this is the one!</i>
+<i>the flow is great and its really interesting</i>
+<i>there are part where there is too much angst but it all gives way to a veryyy happy ending, also kook calls tae his sunflower!!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete non angst abo mafia str college ao3"> 
+
+<h1>the little prince</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/32342707">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jeon Jungkook saves Kim Taehyung from a bully.</p>
+<p>The villain saves the prince.</p>
+
+<!--end description--> </div> 
+
+
+<span>non-explicit</span> <!--age rating box--> 
+<span>32k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>very unique still of writing</i>
+<i>uk how a fic isnt too loud about emotions in it like angst fluff etc...</i>
+<i>this is kinda like that, it just keeps flowing idk how to explain</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst abo enemies marr post parent ao3 mpreg fluff"> 
+
+<h1>frozen freedom</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22965481">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Where Alpha Jeon was forced to marry Omega Tae to strengthen the bond of their packs.</p>
+<p>The Alpha isn&apos;t too happy about it so he made Tae&apos;s life a living hell until one day, the Omega finally vanished only to return after 4 years with pups.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>70k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>this is the author whose summaries are EXTREMELY MISLEADING</i>
+<i>he didnt make tae's life hell, he fucking loved him but misunderstandings drove them apart...yes that the summary</i>
+<i>i love this fic, they are just so fucking hot together and just so in love but the frustation when they just. dont. communicate.</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst abo uncat mpreg fluff str ao3"> 
+
+<h1>once in a lifetime it just feels right</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/33472969">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>War is raging in Korea and omega Taehyung studies to become a nurse so he can help those in need. Just before his graduation, three soldiers come to his village for short vacation. Taehyung instantly feels a strong pull to one of them, alpha Jeongguk, and they spend unforgettable three weeks together.</p>
+<p>Duty separates them and Jeongguk has to return to his base in Seoul, but then finally after months, Taehyung gets sent to work in a hospital in the capital and reunites with Jeongguk. They spent beautiful weeks together before Jeongguk has to leave to the front lines of the war, leaving Taehyung alone and anxious. Are they ever going to reunite again or is the war going to separate them?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>133k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>omg i love this one sm</i>
+<i>its just such a beautiful love story and their love is so so pure</i>
+<i>real good build up and love, their dynamics are great!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst mafia str uncat ao3"> 
+
+<h1>all my walls are falling down for you</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22558468">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Seoul criminal department is dealing with series of murders of prostitutes that&rsquo;s been going on for months. Detective Jeongguk and his colleagues are trying to catch the serial killer without success. Recent murder brings them into an establishment where the latest victim worked. There, Jeongguk meets Taehyung, beautiful and cheeky prostitute that somehow makes way into his head and later into his heart. As the investigation goes on, everything is becoming more tangled and the detectives are desperate. What will happen when Taehyung gets in danger? The killer isn&rsquo;t the only threat he faces, there are lots of bad clients he has. He also carries dark past that makes him believe he doesn&rsquo;t deserve anything good in his life. Will Jeongguk manage to protect him, catch the killer and make Taehyung love himself?&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>100k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>ohh yes i loved this one!</i>
+<i>kook is btslarryaf's fics is just...</i>
+<i>the story gets a lil dark and fucked up but it is what it is and i enjoy dark stuff</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst college friends unreq ao3 fluff"> 
+
+<h1>enchanted to meet you</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/35622022">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Bro codes you should never break in a friendship:<br><em>Do not flirt&nbsp;with your best friend&apos;s lover</em><br><em>Do not fall in love with your best friend&apos;s lover</em><br><em>Do not get into a relationship with your best friend&apos;s ex</em></p>
+<p>One by one, Jeon Jeongguk finds himself breaking them all after meeting Kim Taehyung.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>23k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>nothing made me happier than when they finally got together!</i>
+<i>kook is the sweetest and tae is just amazing in this fic</i>
+<i>a lil angst but it gets really better in the end</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst wat abo unreq marr est parent soul cried fave mpreg"> 
+
+<h1>regret</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://www.wattpad.com/story/212751725">wattpad</a>
+
+<div class="d"> <!--start description--> 
+
+<p>The tale of an Omega&apos;s misery and a Trueblood&apos;s downfall.&nbsp;</p>
+<p>Taehyung always thought that having a mate is beautiful, they love you with all their heart and soul. They will find you a blessing for them and make you the happiest...&nbsp;</p>
+<p>Then why his mate hates him so much, why he didn&apos;t love him, cherish him. Why his mate is the one who gave him a blessing but he&apos;s also the one who hurt him the most that he doesn&apos;t think he will ever forgive him for.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>65 chaps</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i am not even kidding when i say i CRY everytime i read this</i>
+<i>fucking painful but love the fact that it has a proper redemption arc</i>
+<i>i am not a fan of wattpad fics but this was a good one</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst abo soul ceo str fan hist wat mpreg fluff"> 
+
+<h1>the trueblood</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://www.wattpad.com/story/237918319">wattpad</a>
+
+<div class="d"> <!--start description--> 
+
+<p>The reincarnation tale of two mates, the only trueblood and the rare omega, who were seperated by an evil schemer and centuries later the moon goddess gives them a chance to reunite, but it still seems difficult because their old enemy is also reborn and is close to them.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>69 chaps</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>based on the indian movie magadheera so its fucking grand</i>
+<i>i LOVED the plot and the level of drama is too good</i>
+<i>also their characters and dynamics is so wonderful!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst abo enemies fake uncat wat fluff mpreg"> 
+
+<h1>when broken souls met</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://www.wattpad.com/story/207028577">wattpad</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jungkook is a true blood Alpha, who lost his mate in an accident.&nbsp;</p>
+<p>Taehyung is a rare male Omega, whose mate rejected him. .&nbsp;</p>
+<p>What happens when this two broken souls met each other?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>65 chaps</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>tho the grammar is meh but the concept and plot!!</i>
+<i>again based on an indian series and the concept is of 2 broken souls healing each other</i>
+<i>the end would be the main reason this is in my faves, its just so beautiful and romantic and like it radiates happiness</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst fake str uncat wat fluff"> 
+
+<h1>the wedding date</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://www.wattpad.com/story/174598358">wattpad</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung is an elementary school teacher who&apos;s a constant disappointment to his family back in England. His ex-boyfriend is getting married to his younger sister, and he desperately needs a date for the wedding. He calls his friend Yoongi, who sets him up with a professional escort service, and after much begging and pleading, Jungkook decides to help Taehyung out and pretend to be his boyfriend for the wedding. Not knowing that the two of them were going to hit it off far better than either of them expected.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>50 chaps</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>ahh this was a good one, well written with a lovely plot</i>
+<i>its very sweet and i loved the flow like not too much drama just them enjoying each other's company and falling in love</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp fluff mpreg abo marr parent wat"> 
+
+<h1>you complete me</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://www.wattpad.com/story/225175029">wattpad</a>
+
+<div class="d"> <!--start description--> 
+
+<p>One has a tragedic past whom he still not came out completely and the other has a big responsibility to take care of and he feels like lacking in it.&nbsp;</p>
+<p>How they will survive with these events happening in their lives?&nbsp;<br>How will their world collide with each other?&nbsp;<br>How will the destiny make them meet?&nbsp;<br>What will happen once they did meet each other?&nbsp;<br>Fate? Luck? Will it be on their side?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>one-shot</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>a very sweet fic and its super fluffy</i>
+<i>a few detailed and different concepts relating to abo were included which were very interesting </i>
+<i>cutest and softest ending, infact the whole fic is soft</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete exp angst fwb ceo enemies work uncat twt"> 
+
+<h1>fashionista</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/amyungv/status/1430962398106583041">twitter</a>
+
+<div class="d"> <!--start description--> 
+
+<p>&quot;Drop the jeacket,&quot; Jungkook commands from where he is, camera pressed against his eyes, &quot;drop it as if you are about to take it off.&quot;&nbsp;</p>
+<p>Taehyung looks at the cameraman and sighs, shrugs an arm out of the jacket and Jungkook curses.&nbsp;</p>
+<p>&quot;Not like that!&quot;&nbsp;</p>
+<p>The photographer looks at him, for the first time since they started, Jungkook drops the camera and looks at Taehyung with his eyes, &quot;strip tease for me.&quot;&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>long</span> <!--age rating box--> 
+<span>amyungv</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>masterpiece, thats the only way i can describe this one</i>
+<i>they are a fucking power couple in this! also love how both their emotions are conveyed so beautifully</i>
+<i>taegi bros have my heart (nothing new in that)</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete exp angst cried marr unreq hist twt"> 
+
+<h1>the consort</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/flurrygguk/status/1339442671069249537">twitter</a>
+
+<div class="d"> <!--start description--> 
+
+<p>&quot;He can never be the Queen of this Palace,&quot; King Jeon Jungkook once said to his first husband, Kim Taehyung. &nbsp;</p>
+<p>He found himself regretting, when unexpected things happened.&nbsp;</p>
+<p>&quot;I should have never wasted so much time,&quot; He spoke, looking at his love laying there.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>long</span> <!--age rating box--> 
+<span>flurrygguk</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>man this one was so good! i really need some more historical fic, they are always fun to read</i>
+<i>that part where tae finally confronts kook is my fav, like how he needs bribe...well you read it</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete non angst fluff college friends unreq fan twt"> 
+
+<h1>goblin</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/jkkittae/status/1401157141373734914">twitter</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung gets rejected by his best friend and crush, Jungkook.</p>
+<p>Heartbroken and with no outlet for all the emotions bubbling inside him, he grabs the first notebook from his shelf and scribbles his feelings on to it.&nbsp;</p>
+<p>But what he doesn&apos;t expect is to get a reply to his rant in the form of a little &apos;hi?&apos; on the page just below his paragraph.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>long</span> <!--age rating box--> 
+<span>jkkittae</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>what a unique and lovely concept!</i>
+<i>really enjoyed this! the plot and flow is so so good</i>
+<i>past kook is my fav tho, he was so precious!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete non angst canon est post twt"> 
+
+<h1>lost</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/jkthverse/status/1509849251928412164">twitter</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jeon Jungkook and Kim Taehyung &mdash; two idols immensely in love with each other.&nbsp;</p>
+<p>That is, until, the former&rsquo;s label confirms a dating rumour with someone else.&nbsp;</p>
+<p>You can&rsquo;t keep a secret safe forever, can you?&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>long</span> <!--age rating box--> 
+<span>jkthverse</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>man the concept itself hurts</i>
+<i>kook calls tae his moon and tae calls him bun and now i am sad</i>
+<i>you want hurt?! read it...its really niceee</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete non angst fluff str college parent twt"> 
+
+<h1>single dad x drummer au</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/flmvantes/status/1328702318540320771?s=21">twitter</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung finds his roommate Jungkook, a well known drummer in SNU, also known as the intimidating guy in their class, playing with his little son.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>long</span> <!--age rating box--> 
+<span>flmvantes</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i will be very honest, i read this long back so dont remember much but from the small soft moments i can guarantee that this au is so cutee</i>
+<i>kook and tae's son are just so cute together, i cant handle it</i>
+<i>i very clearly remember the part where kook would make the lil baby stop crying  while tae would panic...its a lovely au, must read!</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="complete non fluff enemies ceo marr twt"> 
+
+<h1>rivals</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/kookvent/status/1202224820286410752">twitter</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Rival CEO Kim Taehyung and Jeon Jeongguk loathe each other, /a lot/. They keep exchanging such petty wordsー either on social media and in real life.&nbsp;</p>
+<p>But, one day, the media became a chaos, many questions and gossips expeditiously goes around when Taehyung goes out from Jeongguk&apos;s office with a diamond ring already hugging his finger. &nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>medium</span> <!--age rating box--> 
+<span>kookvent</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>again its been a long time so i dont remember much</i>
+<i>but i do remember that kook gets very protective over tae and become he sweetest</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--example fic--> 
+<article class="fave complete non angst cried canon friends unreq parent uncat twt"> 
+
+<h1>sarang</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://twitter.com/amyungv/status/1474433794442600448">twitter</a>
+
+<div class="d"> <!--start description--> 
+
+<p>&quot;What do you want for Christmas, Sarangie?&quot; Taehyung asks, the baby drawing with utmost focus, &quot;you should write that down.&quot;&nbsp;</p>
+<p>Her wide eyes turn on Taehyung, lower lip jutting out, &quot;I don&apos;t know,&quot; she points at the page, &quot;spelling.&quot;&nbsp;</p>
+<p>Taehyung smiles warmly at the baby, taking the page himself, &quot;tell me and I will write it down for you?&quot;&nbsp;</p>
+<p>Her eyes are glossy with excitement, small lips curved around a hopeful smile, &quot;family.&quot;&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>short</span> <!--age rating box--> 
+<span>amyungv</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>hurt, i was fucking hurt while reading this</i>
+<i>sarang is so adorable i just wanna squish her</i>
+<i>the angst is WOW and the fluff after will just melt your heart</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="complete exp angst mpreg abo enemies hist ao3"> 
+
+<h1>I found my paradise in your arms</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/29898024">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Alpha Jeongguk is tasked to go in hiding during a pack war and protect omega Taehyung, a mate of the leader of his pack. The leader Sehoon is a vile man, possessive of Taehyung, his precious flower. Jeongguk hates the omega but he is determined to do his job and not get in trouble but Taehyung is known to be a little vixen. He is the definition of trouble with his playful and sometimes cruel behaviour. But there is more to him than meets the eye and the days in hiding are long; long enough for the two to get to know each other. And when they do and give up to their natural chemistry the real trouble begins because Sehoon hates it when someone wants to steal his precious possessions. </p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>130k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>man this fic is intense</i>
+<i>tae is a brat but he need the biggest hug</i>
+<i>can never get enough of protective kook</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="complete exp angst fluff str work friends uncat ao3"> 
+
+<h1>perfect match</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/26771314">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung has become a porn star, it wasn&rsquo;t the career he dreamt of when he was growing up but he is content with his job and he is really good at it. After years, he makes it to the top of his company and he is paired with Jeongguk, one of the best actors there are and he is excited. They are great partners on screen but it is hard for Taehyung to breach Jeongguk&rsquo;s walls when they are off cameras. When he finally suceeds, they quickly make a way into each other&rsquo;s heart but it&rsquo;s not easy because love isn&rsquo;t a movie, not even an adult one.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>36k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>its filthy but good</i>
+<i>they both are sweethearts</i>
+<i>i could feel the tension in the air just by reading this fic</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="complete exp fluff str ceo uncat"> 
+
+<h1>its alright if it makes you feel alive</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22678723">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>After cancelling wedding with his shitty fianc&eacute;, Taehyung and his friends go to Las Vegas for a month for him to find some distraction. Little does he know that the distraction comes in the form of waking up next to a stranger and finding out they got married.</p>
+<p>As Taehyung starts getting to know his new husband Jeongguk, he starts discovering that he is the exact opposite of his ex. He treats him nicely and they have fun together, which is something he rarely experienced before. They also go on sex exploration journey &ndash; Tae&rsquo;s whole world is shaking because he never knew sex could be so good.</p>
+<p>What will happen in the month of getting to know each other? Will it all end with marriage annulment or will Taehyung find someone he&rsquo;s been looking for his entire life?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>34k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>now thats called made for each other</i>
+<i>sweet and simple love story but the smut is too good</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="complete exp angst hist ceo str fake body ao3 fluff"> 
+
+<h1>our royal secret</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/25182298">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jeongguk is one of the youngest but best security guards of the Korea&rsquo;s biggest security agency. His boss gives him mysterious job offer surrounded by many secrets so Jeongguk can only guess what it&rsquo;s about. However, never in his wildest dreams has he imagined to become personal guard of the second born Korean prince Taehyung. The prince is Korea&rsquo;s sweetheart but he is also known to be the trouble maker of the royal family and Jeongguk realizes very quickly that his job won&rsquo;t be that easy, especially because he quickly falls for the prince&rsquo;s charms.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>112k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>bodyguard kook fics hit different</i>
+<i>brat tae and brt tamer kook...now you know what to expect, you just cant ignore this</i>
+<i>had this silly smile on my face the entire time</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="complete exp angst fluff ceo college str ao3"> 
+
+<h1>when our worlds collide</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/21489499">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Jeongguk and Taehyung attend a private college in Seoul but their lives are completely opposite. Taehyung comes from one of the most elite and richest family and he was born with golden spoon in his mouth, while Jeongguk is just a regular guy from middle class. Their worlds are completely different and Taehyung has never spared Jeongguk a glance. There is one minor problem &ndash; Jeongguk has had crush on the rich boy since he first saw him.</p>
+<p>Once, Jeongguk attends a fancy event and things take interesting turn. Taehyung, who is cold and perfect on the outside, is in reality just misunderstood and lonely, sick of the fancy and pompous life, parties and people and he finds escape from that boring life with Jeongguk. What will happen when their opposite worlds collide? Will they crush or will they create a whole new world of their own?</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>60k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i love how beautifully this has been written</i>
+<i>a lovely story of both of them finding their 'home'</i>
+<i>you know the happiness when you find the right person...yeah thats what kook was for tae</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="complete exp angst fluff ceo str uncat ao3"> 
+
+<h1>i see your true colours shining through</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30297336">ao3</a>
+
+<div class="d"> <!--start description--> 
+<p>Taehyung has been a fan of idol Jeon Jeongguk since the beginning of his career. He was drawn to him by his music and beautiful voice and personality, even though he can&rsquo;t appreciate his visuals because he is blind. His friends gift him tickets to a fan sign for his birthday and he meets his idol and talks to him. But then crazy thing happens, Jeongguk&rsquo;s manager comes to an animal shelter where he works, saying the idol wants to see him again and so it begins. Taehyung never thought he could live normal and happy life due to his condition, but being with Jeongguk shows him that he doesn&rsquo;t need his sight to be truly happy.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>7k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>one of the sweetest tae ever</i>
+<i>literally everyone being protective over tae and honestky i dont need anything else</i>
+<i>its blind tae and idol kook and i am in love with this, softest fic</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="fave complete exp angst ao3 work str unreq fan"> 
+
+<h1>i promised i wouldnt let you complete me</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/23295382">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>In this time and age, vampires are a rare species. Most of people are happy to avoid them but Taehyung&rsquo;s been always fascinated by them &ndash; too bad that it&rsquo;s really hard to come across one. Taehyung is just a university student but he goes often out at night in hope of meeting one of the mystery creatures. He gets lucky one evening and it turns out into the craziest and the best night of his life. After that, he becomes even more obsessed, dragging his friend Jimin into it.</p>
+<p>Crazy and unexpected thing happens. Taehyung stumbles upon a very unusual advertisement - a small vampire clan is looking for fresh blood suppliers, aka humans. Taehyung&rsquo;s obsession introduces him to a whole new, exciting and dangerous world. And if he finds love on the way, that is just another coincidence.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>162k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>damn this one is so much mor ethan a simple vampire fic</i>
+<i>expecially kook's past is just OMG</i>
+<i>absolutely whipped taekook</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="fave complete exp angst mpreg abo mafia parent fluff ao3"> 
+
+<h1>missing piece</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/32896945">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>when taehyung found out that he&rsquo;s pregnant with the kingpin&rsquo;s pup, he decided to keep the pup to himself. he left the brothel he works at and he ran away with his pup. away from the dangerous world where the kingpin rules.</p>
+<p>five years later, they meet again.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>11k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>honestly their first encounter together is hot</i>
+<i>also the baby is sooo cute</i>
+<i>i love family agenda so yes this is by default one of my fav</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="complete exp fluff ceo fwb enemies friends ao3"> 
+
+<h1>under your claws</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/30870011">part 1</a>,
+<a href="https://archiveofourown.org/works/31004801">part 2</a>
+
+<div class="d"> <!--start description--> 
+
+<p>taehyung doesn&rsquo;t like jungkook. but he likes his touch, his attention, and he likes how the boxer knows what makes him purr like a kitten.</p>
+<p>taehyung thinks he&rsquo;s evil. maybe he is. maybe jungkook is sick in the head, finding pleasure in the younger&rsquo;s jealousy. basking in taehyung&rsquo;s possessiveness. he revels in it.&nbsp;</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>13k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>well you see they both are possessive and obsessed with each other</i>
+<i>kook calls him kitten and that has a weird effect on me</i>
+<i>love the lil fluffy parts like tae's reaction to kook first fight</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+
+<!--example fic--> 
+<article class="fave complete exp angst mpreg abo enemies fwb marr est post ao3"> 
+
+<h1>i'm starting to think that maybe you need me</h1> <!--title--> :: 
+<!--links: add or delete as required--> 
+<a href="https://archiveofourown.org/works/22067884">ao3</a>
+
+<div class="d"> <!--start description--> 
+
+<p>Taehyung and Jeongguk were forced to mate by their parents when they were younger. Taehyung&rsquo;s parents needed money for their farm so Taehyung&rsquo;s father made a deal with Jeongguk&rsquo;s rich father. They were both furious when they found out and even though they were occasionally hooking up, they never fell for each other. They&rsquo;ve thought about rebelling and breaking their bond but it is a painful process, so they were basically just coexisting together.</p>
+<p>Few years into their weird relationship, Taehyung is still acting like an irresponsible teenager most of the time, making the alpha&rsquo;s life harder. Jeongguk is drinking a lot, trying to deal with the whole mess. They are dragging each other down but lifting each other up at the same time. Most of the time it feels like they are two strangers living together but there are moments when suddenly all bad is gone. On their long and bumpy journey, they start realizing that they need each other and that maybe there are some real feelings buried deep inside.</p>
+
+<!--end description--> </div> 
+
+
+<span>explicit</span> <!--age rating box--> 
+<span>111k</span> <!--word count box--> 
+
+<div class="tags"> <!--tags for extra info--> 
+<i>i love this one so much!</i>
+<i>the growth and progress is just so good and uk the happiness when they actually 'talk'</i>
+<i>it has a lot of drama, misunderstandings, fights but they find their way back to each other...</i>
+
+<!--end tags--> </div> 
+</article> 
+<!--end example fic-->
+
+<!--end fics - don't edit beyond this point--> 
+</section>
+</div>
+
+<div class="c"><a href="http://odeysseus.tumblr.com">O</a></div>
+<script>feather.replace()</script>
+</body>
+</html>
